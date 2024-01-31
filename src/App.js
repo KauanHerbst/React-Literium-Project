@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import HeroComponent from './components/LandPageComponents/HeroComponent/HeroComponent';
+import MenuComponent from './components/LandPageComponents/MenuComponent/MenuComponent';
+import SectionFour from './components/LandPageComponents/SectionFour/SectionFour';
+import SectionOne from './components/LandPageComponents/SectionOne/SectionOne';
+import SectionThree from './components/LandPageComponents/SectionThree/SectionThree';
+import SectionTwo from './components/LandPageComponents/SectionTwo/SectionTwo';
+import SectionFive from './components/LandPageComponents/SectionFive/SectionFive';
+import SectionSix from './components/LandPageComponents/SectionSix/SectionSix';
+import SectionSeven from './components/LandPageComponents/SectionSeven/SectionSeven';
+import SectionEight from './components/LandPageComponents/SectionEight/SectionEight';
+import FooterComponent from './components/LandPageComponents/FooterComponent/FooterComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MenuComponent />
+      <HeroComponent />
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <SectionSix />
+      <SectionSeven />
+      <SectionEight />
+      <FooterComponent />
+    </>
   );
 }
 

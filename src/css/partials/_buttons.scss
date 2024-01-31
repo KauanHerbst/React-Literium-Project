@@ -1,0 +1,62 @@
+.ButtonCta{
+  display: inline-block;
+  background-color: $primary-white-2;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 178px;
+  padding: 8px 16px;
+  border-radius: 24px;
+  box-shadow: 0px 2.603px 10.399px 0px rgba(0, 0, 0, 0.11), 0px 4.855px 22.39px 0px rgba(0, 0, 0, 0.15), 0px 9.498px 44.697px 0px rgba(0, 0, 0, 0.26);
+  transition: .4s ease;
+  &:hover{
+    background-color: $primary-dark-3;
+    transform: scale(1.1);
+    color: $white-light-3
+  }
+
+  @include responsive(s){
+    width: 172px;
+  };
+
+}
+
+.card-button{
+  width: 180px;
+  background-color: $primary-normal;
+  color: $white-light-3;
+  outline: none;
+  padding: 16px;
+  margin: 16px;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0px 9px 46px 0px rgba(128, 0, 32, 0.43);
+
+  @include responsive(s){
+    width: 162px;
+    margin: 12px;
+  }
+
+}
+
+.btn-account{
+  font-size: 22px;
+  text-align: center;
+  width: 236px;
+  height: 46px;
+  padding: 8px 16px;
+  color: $white-light-3;
+  border: 0;
+  outline: none;
+  background-color: $primary-normal;
+  border-radius: 24px;
+  box-shadow: 0px 4.107px 19.625px 0px rgba(128, 0, 32, 0.26), 0px 4.636px 25.433px 0px rgba(128, 0, 32, 0.31), 0px 9px 46px 0px rgba(128, 0, 32, 0.43);
+  cursor: pointer;
+  transition: .4s ease;
+
+  &:hover{
+    background-color: $primary-dark-3;
+    transform: scale(1.1);
+    color: $white-light-3
+  }
+}

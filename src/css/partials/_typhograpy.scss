@@ -1,0 +1,136 @@
+// Lora
+
+@mixin loraFamily($size, $device: desktop){
+
+  font-family: 'Lora', serif;
+
+  @if $size == h1 and $device == desktop{
+    font-size: 64px;
+    line-height: 100%;
+  }@else if $size == h1 and $device == mobile{
+    font-size: 48px;
+    line-height: 120%;
+  }
+
+  @else if $size == h2 and $device == desktop{
+    font-size: 48;
+    line-height: 110%;
+  }@else if $size == h2 and $device == mobile{
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  @else if $size == h3 and $device == desktop{
+    font-size: 40px;
+    line-height: 120%;
+  }@else if $size == h3 and $device == mobile{
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+
+  @else if $size == h4 and $device == desktop{
+    font-size: 18px;
+    line-height: 130%;
+    text-transform: uppercase;
+    font-weight: 600;
+  }@else if $size == h4 and $device == mobile{
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
+
+// Roboto
+
+@mixin robotoFamily($size: p2, $device: desktop){
+
+  font-family: 'Roboto', sans-serif;
+
+  @if $size == p1 and $device == desktop{
+    font-size: 24px;
+    line-height: 140%;
+  }@else if $size == p1 and $device == mobile{
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  @else if $size == p2 and $device == desktop{
+    font-size: 18px;
+    line-height: 130%;
+  }@else if $size == p2 and $device == mobile{
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  @else if $size == l1 and $device == desktop{
+    font-size: 22px;
+    line-height: 130%;
+  }@else if $size == l1 and $device == mobile{
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
+
+h1 {
+  color: $black-dark-3;
+  font-weight: 400;
+  @include loraFamily(h1, desktop);
+
+  @include responsive(s){
+    @include loraFamily(h1, mobile)
+  }
+
+}
+
+h2{
+  color: $black-dark-3;
+  font-weight: 400;
+  @include loraFamily(h2, desktop);
+
+  @include responsive(s){
+    @include loraFamily(h2, mobile)
+  }
+}
+
+h3{
+  color: $primary-normal;
+  font-weight: 400;
+  @include loraFamily(h3, desktop);
+
+  @include responsive(s){
+    @include loraFamily(h3, mobile)
+  }
+}
+
+h4{
+  color: $primary-normal;
+  font-weight: 400;
+  @include loraFamily(h4, desktop);
+
+  @include responsive(s){
+    @include loraFamily(h4, mobile)
+  }
+}
+
+p{
+  color: $white-dark-3;
+  @include robotoFamily(p2, desktop);
+
+  @include responsive(s){
+    @include robotoFamily(p2, mobile)
+  }
+}
+
+strong{
+  color: $black-dark-2;
+}
+
+label{
+  color: $white-dark-3;
+  @include robotoFamily(l1, desktop);
+
+  @include responsive(s){
+    @include robotoFamily(l1, mobile)
+  }
+
+}

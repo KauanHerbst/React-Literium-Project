@@ -1,0 +1,57 @@
+.LogoBookSvg {
+  @include responsive(s){
+    width: 264px;
+  }
+  @include responsive(m){
+    width: 296px;
+  }
+}
+
+.SetaSvg{
+  width: 128px;
+  overflow: hidden;
+}
+
+#seta-svg-1{
+  position: relative;
+  top: -500px;
+  left: 100px;
+  @include responsive(s){
+    top: -460px;
+    left: 40px;
+  }
+}
+
+#seta-svg-2{
+  position: relative;
+  top: -570px;
+  left: 360px;
+  @include responsive(s){
+    top: -560px;
+    left: 260px;
+  }
+}
+
+#seta-svg-3{
+  position: relative;
+  top: -550px;
+  left: 210px;
+  @include responsive(s){
+    top: -560px;
+    left: 140px;
+  }
+}
+
+#seta-svg-4{
+  position: relative;
+  top: -460px;
+  left: 250px;
+  @include responsive(s){
+    top: -490px;
+    left: 170px;
+  }
+}
+.starSvg{
+  width: 120px;
+
+}

@@ -1,0 +1,411 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@import "partials/_colors";
+@import "partials/_layout";
+@import "partials/_typhograpy";
+@import "partials/_icons";
+@import "./partials/_inputs";
+@import "partials/_menu";
+@import "partials/_footer";
+@import "partials/_buttons";
+@import "partials/_spacing";
+@import "partials/svgs";
+@import "partials/_animations";
+
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+  font-family: 'Lora', serif;
+  color: $white-light-3;
+  text-decoration: none;
+
+  transition: .2s linear;
+
+  &:hover{
+    color: $primary-dark-3
+  }
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  position: relative;
+
+  background-color: $secondary-white-4;
+}
+
+svg, img{
+  display: block;
+  width: 100%;
+}
+
+.text-sub-bar{
+  width: 262px;
+  height: 18px;
+  border-radius: 24px;
+  background: $gradient-primary-1;
+  @include responsive(s){
+    width: 296px;
+  }
+}
+
+
+.container-card{
+  width: 256px;
+  height: 348px;
+  background-color: $black-dark-1;
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 24px;
+
+  @include responsive(s){
+    width: 216px;
+    height: 296px;
+  }
+
+}
+
+
+.card-image{
+  background-color: $white-light-2;
+  width: 224px;
+  height: 224px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+  transition: .5s ease;
+
+  &:hover{
+    img{
+      transform: scale(1.2);
+    }
+  }
+
+  img{
+    transition: .5s ease;
+    width: 70%;
+    height: 95%;
+  }
+
+  @include responsive(s){
+    width: 188px;
+    height: 188px;
+  }
+}
+
+.sectionOne{
+  margin-left: 48px;
+  @include responsive(s){
+    margin-left: 0px;
+  }
+}
+
+#card-1{
+  top: -160px;
+  right: -196px;
+
+  @include responsive(s){
+    top:0;
+    right:0;
+  }
+  @include responsive(m){
+    top:0;
+    right:0;
+  }
+}
+
+#card-2{
+  right: -196px;
+  @include responsive(s){
+    right:0;
+  }
+
+  @include responsive(m){
+    right:0;
+  }
+}
+
+#card-3{
+  top: 220px;
+  right: 379px;
+
+  @include responsive(s){
+    top:0;
+    right:0;
+  }
+
+  @include responsive(m){
+    top:0;
+    right:0;
+  }
+}
+
+.benefit-box{
+  width: 100%;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  span{
+    font-family: 'Roboto', sans-serif;
+    color: $black-dark-3;
+    font-size: 24px;
+    margin: 16px;
+  }
+}
+
+.icon-box{
+  width: 72px;
+  height: 72px;
+  border-radius: 24px;
+  background-color: $white-light-3;
+  box-shadow: 0px 5.041px 18.658px 0px rgba(188, 99, 101, 0.15), 0px 14px 63px 0px rgba(188, 99, 101, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg{
+    width: 70%;
+    height: 70%;
+  }
+}
+
+.container-image-section-two{
+  display: flex;
+  margin: 36px;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-light-3;
+  width: 564px;
+  height: 340px;
+  padding: 12px;
+  border-radius: 24px;
+  box-shadow: 0px 20.011px 53.411px 0px rgba(0, 0, 0, 0.13), 0px 28.353px 60.687px 0px rgba(0, 0, 0, 0.18), 0px 62px 126px 0px rgba(0, 0, 0, 0.31);
+
+  @include responsive(s){
+    overflow: hidden;
+    width: 312px;
+    height: 192px;
+  }
+
+}
+
+.section-three{
+  @include responsive(s){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.box-detail{
+  span{
+    font-family: 'Roboto', sans-serif;
+    color: $black-dark-3;
+    font-size: 24px;
+    margin: 8px;
+  }
+}
+
+.circle-detail{
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: $gradient-primary-1;
+  @include responsive(s){
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+  }
+}
+
+.container-card-feedback{
+  background-color: $white-light-3;
+  width: 236px;
+  border-radius: 24px;
+  text-align: center;
+  padding: 16px 24px;
+  box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.4);
+
+  span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+  }
+
+  p{
+    padding: 8px ;
+  }
+}
+
+.card-feedback-image{
+  background-color: $black-dark-1;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.container-slider{
+  overflow: none;
+  width: 900px;
+  @include responsive(s){
+    width: 580px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container-slider {
+    width: 280px;
+  }
+}
+
+
+.sliderItem{
+  margin-left: 78px;
+  @include responsive(s){
+    margin-left: 0;
+  }
+  @include responsive(m){
+    margin-left: 0;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  color: $primary-normal !important;
+}
+
+.container-image-section-six{
+  display: flex;
+  margin: 36px;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-light-3;
+  width: 518px;
+  height: 348px;
+  border-radius: 24px;
+  box-shadow: 0px 20.011px 53.411px 0px rgba(0, 0, 0, 0.13), 0px 28.353px 60.687px 0px rgba(0, 0, 0, 0.18), 0px 62px 126px 0px rgba(0, 0, 0, 0.31);
+
+  @include responsive(s){
+    margin: 18px;
+    overflow: hidden;
+    width: 356px;
+    height: 242px;
+  }
+
+}
+
+.image-secton-six{
+  width: 500px;
+
+  @include responsive(s){
+    overflow: hidden;
+    width: 340px;
+  }
+}
+
+
+#image-section-six-1{
+  right: 350px;
+
+  @include responsive(m){
+    right: 0px;
+  }
+  @include responsive(s){
+    right: 0px;
+  }
+}
+
+#title-footer{
+  color: $white-light-3;
+}
+
+.image-hero{
+  width: 640px;
+  height: 524px;
+  position: absolute;
+  @include responsive(m){
+    width: 540px;
+    height: 424px;
+  }
+
+  @include responsive(s){
+    position: static;
+    width: 370px;
+    height: auto;
+  }
+}
+.hero-title{
+  top: 180px;
+
+  @include responsive(s){
+    top: 0px;
+    position: static;
+  }
+}
+
+.width-sub-bar-1{
+  width: 190px;
+  @include responsive(s){
+    width: 220px;
+  }
+}
+
+
+.width-sub-bar-2{
+  width: 310px;
+  @include responsive(s){
+    width: 330px;
+  }
+}
+
+.width-sub-bar-3{
+  width: 150px;
+  @include responsive(s){
+    width: 180px;
+  }
+}
+
+.width-sub-bar-4{
+  width: 200px;
+  @include responsive(s){
+    width: 230px;
+  }
+}
+
+.width-sub-bar-5{
+  width: 180px;
+  @include responsive(s){
+    width: 210px;
+  }
+}
+
+.width-sub-bar-6{
+  width: 240px;
+  @include responsive(s){
+    width: 280px;
+  }
+}
+
+.image-section-two{
+  width: 550px;
+  height: 320px;
+  position: absolute;
+  @include responsive(s){
+    overflow: hidden;
+    width: 300px;
+    height: 172px;
+  }
+}

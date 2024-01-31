@@ -1,0 +1,54 @@
+header{
+  width: 100%;
+  background-color: $primary-normal;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+}
+
+.menu-desktop{
+  width: $container-m;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 18px;
+  align-items: center;
+
+  @include responsive(s){
+    display: none;
+  }
+
+  a{
+    font-size: 22px
+  }
+}
+
+
+.menu-mobile{
+  display: none;
+  justify-content: space-between;
+  padding: 8px 18px;
+  align-items: center;
+  @include responsive(s){
+    display: flex;
+  };
+
+  @include responsive(xs){
+    display: none;
+  }
+}
+
+.menu-small{
+  display: none;
+  justify-content: space-between;
+  padding: 8px 18px;
+  align-items: center;
+  .link-cta-mobile{
+    width: 156px;
+    margin-left: 36px;
+  }
+
+  @include responsive(xs){
+    display: flex;
+  };
+}

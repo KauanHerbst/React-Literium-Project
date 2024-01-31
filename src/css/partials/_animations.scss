@@ -1,0 +1,161 @@
+.box-float-big{
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: $black-dark-3;
+  background-color: $white-light-3;
+  width: 136px;
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 24px;
+  box-shadow: 0px 1.119px 24.325px 0px rgba(128, 0, 32, 0.36), 0px 4px 53px 0px rgba(128, 0, 32, 0.57);
+  transition: .4s ease;
+
+  &:hover{
+    transform: scale(1.4);
+  }
+
+  @include responsive(s){
+    transform: scale(.8);
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+}
+
+.box-float-small{
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: $black-dark-3;
+  background-color: $white-light-3;
+  width: 72px;
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 24px;
+  box-shadow: 0px 1.119px 24.325px 0px rgba(128, 0, 32, 0.36), 0px 4px 53px 0px rgba(128, 0, 32, 0.57);
+  transition: .4s ease;
+
+  &:hover{
+    transform: scale(1.4);
+
+  }
+
+  @include responsive(s){
+    transform: scale(.8);
+      &:hover{
+      transform: scale(1.1);
+
+    }
+  }
+
+}
+
+#box-hero-1{
+  top: 10px  ;
+  right: 100px;
+  transition: .4s ease;
+
+  @include responsive(m){
+    top: 10px  ;
+    right: 120px;
+  }
+
+  @include responsive(s){
+    top: 4px  ;
+    right: 30px;
+  }
+}
+
+#box-hero-2{
+  top: 20px;
+  right: 500px;
+  transition: .4s ease;
+
+  @include responsive(m){
+    top: 20px  ;
+    right: 470px;
+
+  }
+  @include responsive(s){
+    top: 5px;
+    right: 260px;
+  }
+}
+
+#box-hero-3{
+  top: 430px;
+  right: 520px;
+  transition: .4s ease;
+  @include responsive(m){
+    top: 340px  ;
+    right: 470px;
+
+  }
+  @include responsive(s){
+    top: 230px;
+    right: 260px;
+  }
+}
+
+#box-two-1{
+  top: 10px;
+  left: 400px;
+  @include responsive(s){
+    left: 200px;
+  }
+}
+
+#box-two-2{
+  top: 210px;
+  left: 50px;
+  @include responsive(s){
+    top: 95px;
+  }
+}
+
+.recebido-icon{
+  transition: .5s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+#box-seven-1{
+  top: 10px;
+  left: 270px;
+  @include responsive(s){
+    left: 220px;
+  }
+}
+
+#box-seven-2{
+  top: 200px;
+  left: -20px;
+}
+
+#box-seven-3{
+  top: 230px;
+  left: 240px;
+  @include responsive(s){
+    left: 220px;
+  }
+}
+
+.circle-detail{
+  transition: .5s ease;
+  &:hover{
+    transform: scale(1.2);
+    rotate: 360deg;
+  }
+}
+
+.benefit-box{
+  transition: .5s ease;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
