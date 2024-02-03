@@ -46,5 +46,8 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-param-reassign': 'off',
     'jsx-a11y/control-has-associated-label': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'no-console': 'off',
+    'no-dupe-else-if': 'off',
   },
 };

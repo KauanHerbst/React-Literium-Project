@@ -38,7 +38,10 @@
     font-size: 18px;
     line-height: 120%;
   }
+
+
 }
+
 
 // Roboto
 
@@ -66,6 +69,15 @@
     font-size: 22px;
     line-height: 130%;
   }@else if $size == l1 and $device == mobile{
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  @else if $size == h5 and $device == desktop{
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: 400;
+  }@else if $size == h5 and $device == mobile{
     font-size: 18px;
     line-height: 120%;
   }
@@ -111,6 +123,16 @@ h4{
     @include loraFamily(h4, mobile)
   }
 }
+
+h5{
+  color: $black-dark-3;
+  @include robotoFamily(h5, desktop);
+
+  @include responsive(s){
+    @include robotoFamily(h4, mobile)
+  }
+}
+
 
 p{
   color: $white-dark-3;

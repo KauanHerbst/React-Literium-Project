@@ -72,8 +72,13 @@ $container-s: 540px;
   }
 }
 
+
 .width-100{
   width: 100%;
+}
+
+.container-m{
+  width: $container-m;
 }
 
 .overflow-hidden{
@@ -93,7 +98,9 @@ $container-s: 540px;
 
 .flex-between{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .flex-start{
@@ -151,6 +158,7 @@ $container-s: 540px;
 .position-relative{
   position: relative;
 }
+
 
 .flex-column{
   flex-direction: column;

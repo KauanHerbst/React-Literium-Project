@@ -8,3 +8,18 @@ input[type='text'],input[type='email'],input[type='password']{
   border-radius: 16px;
   background-color: $white-light-3;
 }
+
+input[type='search']{
+  background-color: $white-light-2;
+  border: 0;
+  outline: 0;
+  width: 318px;
+  height: 32px;
+  font-size: 22px;
+
+  @include responsive(s){
+    width: 250px;
+    font-size: 16px;
+    height: 21px;
+  }
+}

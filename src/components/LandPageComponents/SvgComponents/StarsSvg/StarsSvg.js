@@ -1,11 +1,13 @@
 import React from 'react';
 
-function StarsSvg() {
+function StarsSvg({ children, width, height }) {
+  width = width || 140;
+  height = height || 26;
   return (
     <svg
       className="starSvg ml-3"
-      width="140"
-      height="26"
+      width={width}
+      height={height}
       viewBox="0 0 140 26"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

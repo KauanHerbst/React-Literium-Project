@@ -6,7 +6,7 @@ import LiteirumSvg from '../SvgComponents/LiteriumSvg/LiteirumSvg';
 function MenuComponent() {
   return (
     <header>
-      <div className="container-menu">
+      <div className="">
         <div className="menu-desktop">
           <a href="/">Sobre</a>
           <LogoSvg />

@@ -47,6 +47,8 @@ svg, img{
   width: 100%;
 }
 
+// Landing Page
+
 .text-sub-bar{
   width: 262px;
   height: 18px;
@@ -407,5 +409,144 @@ svg, img{
     overflow: hidden;
     width: 300px;
     height: 172px;
+  }
+}
+
+// Home Page
+
+.image-promotion{
+  margin-top: 80px;
+
+  @include responsive(s){
+    margin-top: 110px;
+  }
+}
+
+.container-cardBuy{
+  border-radius: 18px;
+  padding: 16px;
+  width: 232px;
+  height: 328px;
+  background-color: $white-light-1;
+  transition: .4s ease;
+  box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.4);
+
+  .container-image{
+    border-radius: 18px;
+    width: 100%;
+    height: 172px;
+    background-color: $white-light-3;
+  }
+
+  .container-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image-book{
+    width: 140px;
+    width: 70px;
+    transition: .4s ease;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+  h5{
+    color: $black-dark-3;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.container-slider-cardsbuy{
+  overflow: none;
+  width: 1100px;
+  height: 380px;
+  @include responsive(m){
+    width: 1000px;
+  }
+  @include responsive(s){
+    width: 580px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container-slider-cardsbuy{
+    width: 280px;
+  }
+}
+
+.container-cardBuy{
+  margin: 24px;
+  @include responsive(s){
+    margin: 24px;
+  }
+}
+
+.swiper{
+  height: 380px;
+}
+
+.color-black {
+  color: $primary-dark-3;
+}
+
+.container-slider-home{
+  justify-content: flex-start;
+  align-items: flex-start;
+  @include responsive(s){
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container-author{
+  transition: .4s ease;
+
+  .container-author-img{
+    transition: .4s ease;
+    border-radius: 50%;
+    width: 226px;
+    height: 228px;
+    background-color: $white-light-1;
+    box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.4);
+
+    img{
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover{
+      border: 8px solid $primary-normal;
+    }
+
+  }
+
+  &:hover{
+    transform: scale(1.1);
+  }
+
+
+}
+
+.container-recnews{
+  margin-left: 128px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @include responsive(s){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
   }
 }
