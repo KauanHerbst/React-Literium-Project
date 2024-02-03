@@ -72,6 +72,7 @@
   background-color: $primary-normal;
   padding: 10px 18px;
   transition: .4s ease;
+  box-shadow: 0px 4.107px 19.625px 0px rgba(128, 0, 32, 0.26);
 
   &:hover{
     background-color: $primary-dark-3;
@@ -79,3 +80,6 @@
   }
 }
 
+.btn-remove-product{
+  width: 128px;
+}
