@@ -511,6 +511,7 @@ svg, img{
   transition: .4s ease;
 
   .container-author-img{
+    cursor: pointer;
     transition: .4s ease;
     border-radius: 50%;
     width: 226px;
@@ -548,5 +549,135 @@ svg, img{
     justify-content: center;
     align-items: center;
     margin-left: 0px;
+  }
+}
+
+// Product Page
+
+.container-product{
+  .image-product{
+    border-radius: 24px;
+    margin: 8px;
+    padding: 16px;
+    width: 492px;
+    height: 532px;
+    background-color: $white-light-1;
+    box-shadow: 0px 4px 27px 0px rgba(0, 0, 0, 0.1599999964237213) ;
+
+    img{
+      width: 70%;
+
+    }
+
+    @include responsive(m){
+      width: 436px;
+      height: 472px;
+    }
+
+    @include responsive(s){
+      width: 216px;
+      height: 288px;
+    }
+
+    @include responsive(xs){
+      display: none;
+    }
+  }
+
+  .product-info{
+    border-radius: 24px;
+    margin: 8px;
+    padding: 16px;
+    background-color: $white-light-3;
+    width: 372px;
+    height: 282px;
+    box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+    @include responsive(m){
+      width: 364px;
+      height: 278px;
+    }
+
+    @include responsive(s){
+      width: 306px;
+      height: 278px;
+    }
+
+    @include responsive(xs){
+      width: 356px;
+      height: 292px;
+    }
+
+    .calc-frete{
+      cursor: pointer;
+      transition: .4s ease;
+      &:hover{
+        text-decoration: underline;
+
+      }
+    }
+
+    .small-img{
+      width: 118px;
+      height: 136px;
+      border-radius: 12px;
+      background-color: $white-light-1;
+
+      img{
+        width: 70%;
+      }
+
+    }
+
+    @include responsive(s){
+      .buttonAddCart{
+        width: 145px;
+        padding: 8px;
+    }
+    }
+
+  }
+
+  .product-desc{
+    padding: 16px;
+    border-radius: 24px;
+    margin: 24px 16px;
+    background-color: $white-light-3;
+    width: 906px;
+    height: 432px;
+    box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+    @include responsive(m){
+      width: 824px;
+      height: 372px;
+    }
+    @include responsive(s){
+      width: 516px;
+      height: 572px;
+    }
+
+    @include responsive(xs){
+      width: 356px;
+      height: 748px;
+    }
+  }
+}
+
+.container-add-product{
+  font-family: 'Roboto', sans-serif;
+  border-radius: 24px;
+  background-color: $white-light-1;
+  user-select: none;
+  cursor: pointer;
+  .btn-sum, .btn-sub{
+    border: 0;
+    outline: none;
+    color: $white-light-3;
+    border-radius: 80%;
+    background-color: $primary-normal;
+    padding: 8px;
+    transition: .4s ease;
+    &:hover{
+      transform: scale(1.1);
+      background-color: $primary-dark-3;
+    }
   }
 }

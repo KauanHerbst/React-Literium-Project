@@ -58,6 +58,10 @@ $container-s: 540px;
   max-width: $container-m;
 }
 
+.bg-red{
+  background-color: red;
+}
+
 .container-responsive-m{
   margin-top: 22rem;
   @include responsive(m){

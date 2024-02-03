@@ -20,7 +20,7 @@ function CardBuyComponent({ children, name, price, img }) {
       </div>
       <div className="ml-1 mt-1">
         <button type="submit" className="buttonAddCart mg-1">
-          Adicionar ao carrinho
+          Ver Produto
         </button>
       </div>
     </div>

@@ -5,10 +5,11 @@ import App from './App';
 import Test from './Test';
 import LandingPage from './Pages/LandingPage/LandingPage';
 import HomePage from './Pages/HomePage/HomePage';
+import ProductPage from './Pages/ProductPage/ProductPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HomePage />
+    <ProductPage />
   </React.StrictMode>
 );
