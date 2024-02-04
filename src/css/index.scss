@@ -467,7 +467,7 @@ svg, img{
 }
 
 .container-slider-cardsbuy{
-  overflow: none;
+  overflow: hidden;
   width: 1100px;
   height: 380px;
   @include responsive(m){
@@ -720,3 +720,42 @@ svg, img{
     width: 196px ;
   }
 }
+
+
+// Fav Page
+
+.container-fav{
+  max-width: 65%;
+  border-radius: 18px;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: $white-light-3;
+  box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+
+  .image-product-fav{
+    border-radius: 12px;
+    width: 98px;
+    background-color: $white-light-1;
+    height: 116px;
+
+    img{
+      width: 70%;
+    }
+
+  }
+
+  .buttons{
+    margin-bottom: 16px;
+  }
+
+  @include responsive(s){
+    flex-direction: column;
+    max-width: 396px;
+    height: 286px;
+
+    .container-info{
+      margin-top: 16px;
+    }
+  }
+}
+

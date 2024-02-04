@@ -3,12 +3,13 @@ import FooterCompoenent from './components/LandPageComponents/FooterComponent/Fo
 import ProductComponent from './components/ProductComponent/ProductComponent';
 import CategoryComponent from './components/CategoryComponent/CategoryComponent';
 import CartComponent from './components/CartComponent/CartComponent';
+import FavComponent from './components/FavComponent/FavComponent';
 
 function App() {
   return (
     <>
       <MenuComponent />
-      <CartComponent />
+      <FavComponent />
       <CategoryComponent category="Veja Também" />
       <FooterCompoenent />
     </>

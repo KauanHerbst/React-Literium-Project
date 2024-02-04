@@ -9,6 +9,8 @@ function CartComponent() {
         <OrderComponent />
         <OrderComponent />
         <OrderComponent />
+        <OrderComponent />
+        <OrderComponent />
       </div>
       <div className="flex-item-1 flex-start pre-container-payment">
         <div className="container-payment ">
