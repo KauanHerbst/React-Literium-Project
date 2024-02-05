@@ -1902,4 +1902,51 @@ svg, img {
   .container-profile-admin {
     width: 364px;
   }
+}
+
+.container-book-info {
+  border-radius: 18px;
+  width: 800px;
+  height: 128px;
+  padding: 8px 16px;
+  background-color: #F7F6F6;
+  box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+}
+.container-book-info h2 {
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 960px) {
+  .container-book-info .container-info {
+    margin-top: 24px;
+  }
+}
+.container-book-info .image-product {
+  border-radius: 12px;
+  width: 98px;
+  background-color: #E9E8E8;
+  height: 116px;
+}
+.container-book-info img {
+  width: 70%;
+}
+@media screen and (max-width: 960px) {
+  .container-book-info {
+    width: 336px;
+    height: 292px;
+  }
+}
+.container-book-info .buttons {
+  margin-left: 148px;
+  margin-bottom: 18px;
+}
+@media screen and (max-width: 960px) {
+  .container-book-info .buttons {
+    margin-left: 0px;
+  }
+}
+.container-book-info .buttons .btn-delete {
+  background-color: #450005;
+}
+.container-book-info .buttons .btn-delete:hover {
+  background-color: #220000;
 }/*# sourceMappingURL=index.css.map */

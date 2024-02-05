@@ -10,10 +10,12 @@ import CartPage from './Pages/CartPage/CartPage';
 import FavPage from './Pages/FavPage/FavPage';
 import AccountPage from './Pages/AccountPage/AccountPage';
 import LoginPage from './Pages/LoginPage/LoginPage';
+import ProfilePage from './Pages/ProfilePage/ProfilePage';
+import BookManagementPage from './Pages/BookManagementPage/BookManagementPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BookManagementPage />
   </React.StrictMode>
 );

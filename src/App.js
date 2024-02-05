@@ -7,12 +7,13 @@ import FavComponent from './components/FavComponent/FavComponent';
 import CreateAccountComponent from './components/CreateAccountComponent/CreateAccountComponent';
 import LoginAccountComponent from './components/LoginAccountComponent/LoginAccountComponent';
 import ProfileComponent from './components/ProfileComponent/ProfileComponent';
+import BookManagComponent from './components/BookManagComponent/BookManagComponent';
 
 function App() {
   return (
     <>
       <MenuComponent />
-      <ProfileComponent />
+      <BookManagComponent />
       <FooterCompoenent />
     </>
   );
