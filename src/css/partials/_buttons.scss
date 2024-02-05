@@ -61,7 +61,7 @@
   }
 }
 
-.buttonAddCart, .btn-recnews{
+.buttonAddCart, .btn-recnews, .buttonPattern{
   font-family: 'Roboto', sans-serif;
   width: 172px;
   cursor: pointer;
@@ -79,6 +79,19 @@
     transform: scale(1.1);
   }
 
+}
+
+.btn-create-account{
+  width: 100%;
+  font-size: 22px;
+  @include responsive(s){
+    font-size: 18px;
+
+    &:hover{
+      background-color: $primary-dark-3;
+      transform: scale(1.07);
+    }
+  }
 }
 
 .btn-remove-product{

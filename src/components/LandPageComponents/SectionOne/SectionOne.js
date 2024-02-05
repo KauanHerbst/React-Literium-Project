@@ -10,7 +10,7 @@ function Section() {
     <section className="container container-responsive-m">
       <div className="flex-item-2 flex-start flex-column sectionOne">
         <h2>Maior Acervo do Brasil</h2>
-        <div className="text-sub-bar" />
+        <div className="text-sub-bar " />
         <LogoBook />
         <p className="mg-1">
           {' '}

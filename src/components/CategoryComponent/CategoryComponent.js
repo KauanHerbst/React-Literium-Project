@@ -45,7 +45,7 @@ function CategoryComponent({ children, category }) {
       <div className="flex-start flex-no-center">
         <div className="flex-start flex-column ">
           <h2>{category}</h2>
-          <div className="text-sub-bar width-sub-bar-3" />
+          <div className="text-sub-bar width-sub-bar-100" />
         </div>
         <div className="mg-1">
           <a href="/" className="color-black">

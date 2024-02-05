@@ -46,7 +46,7 @@ function AuthorComponent() {
       <div className="flex-start container-slider-home">
         <div>
           <h2>Principais Autores</h2>
-          <div className="text-sub-bar width-sub-bar-4" />
+          <div className="text-sub-bar width-sub-bar-100" />
         </div>
         <div className="mg-2">
           <a href="/" className="color-black">

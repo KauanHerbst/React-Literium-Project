@@ -6,7 +6,7 @@ function RecNewsComponent() {
     <section className="container flex-start flex-column  flex-responsive-start-center">
       <div>
         <h2>Receba Novidades</h2>
-        <div className="text-sub-bar width-sub-bar-4" />
+        <div className="text-sub-bar width-sub-bar-100" />
       </div>
       <div className="container-recnews">
         <InputComponent

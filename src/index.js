@@ -8,10 +8,12 @@ import HomePage from './Pages/HomePage/HomePage';
 import ProductPage from './Pages/ProductPage/ProductPage';
 import CartPage from './Pages/CartPage/CartPage';
 import FavPage from './Pages/FavPage/FavPage';
+import AccountPage from './Pages/AccountPage/AccountPage';
+import LoginPage from './Pages/LoginPage/LoginPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FavPage />
+    <CartPage />
   </React.StrictMode>
 );

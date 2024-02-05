@@ -4,13 +4,14 @@ import ProductComponent from './components/ProductComponent/ProductComponent';
 import CategoryComponent from './components/CategoryComponent/CategoryComponent';
 import CartComponent from './components/CartComponent/CartComponent';
 import FavComponent from './components/FavComponent/FavComponent';
+import CreateAccountComponent from './components/CreateAccountComponent/CreateAccountComponent';
+import LoginAccountComponent from './components/LoginAccountComponent/LoginAccountComponent';
 
 function App() {
   return (
     <>
       <MenuComponent />
-      <FavComponent />
-      <CategoryComponent category="Veja Também" />
+      <LoginAccountComponent />
       <FooterCompoenent />
     </>
   );
