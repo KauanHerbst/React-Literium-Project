@@ -281,6 +281,7 @@ input[type=text], input[type=email], input[type=password], input[type=name], inp
   border: 2px solid #450005;
   border-radius: 16px;
   background-color: #F7F6F6;
+  box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
 }
 
 input[type=search] {
@@ -297,6 +298,32 @@ input[type=search] {
     font-size: 16px;
     height: 21px;
   }
+}
+
+textarea {
+  width: 100%;
+  height: 232px;
+  font-size: 18px;
+  padding: 8px 16px;
+  outline: none;
+  border: 2px solid #450005;
+  border-radius: 16px;
+  background-color: #F7F6F6;
+  box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+}
+
+select {
+  width: 100%;
+  font-size: 18px;
+  padding: 8px 16px;
+  outline: none;
+  border: 2px solid #450005;
+  border-radius: 16px;
+  background-color: #F7F6F6;
+  box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+}
+select option {
+  background-color: #F0EFEF;
 }
 
 header {
@@ -1949,4 +1976,43 @@ svg, img {
 }
 .container-book-info .buttons .btn-delete:hover {
   background-color: #220000;
+}
+
+.container-edit-book, .container-create-book {
+  width: 578px;
+  background-color: #F7F6F6;
+  padding: 24px;
+  box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+}
+.container-edit-book input, .container-create-book input {
+  width: 472px;
+}
+.container-edit-book button, .container-create-book button {
+  width: 100%;
+  height: 48px;
+  font-size: 22px;
+}
+@media screen and (max-width: 960px) {
+  .container-edit-book, .container-create-book {
+    width: 328px;
+  }
+  .container-edit-book .text-sub-bar, .container-create-book .text-sub-bar {
+    width: 80%;
+  }
+  .container-edit-book form, .container-create-book form {
+    margin: 16px;
+  }
+  .container-edit-book input, .container-create-book input {
+    width: 236px;
+  }
+  .container-edit-book button, .container-create-book button {
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+  }
+}
+
+.container-edit-book .text-sub-bar {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

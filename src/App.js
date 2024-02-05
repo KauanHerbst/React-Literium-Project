@@ -8,12 +8,14 @@ import CreateAccountComponent from './components/CreateAccountComponent/CreateAc
 import LoginAccountComponent from './components/LoginAccountComponent/LoginAccountComponent';
 import ProfileComponent from './components/ProfileComponent/ProfileComponent';
 import BookManagComponent from './components/BookManagComponent/BookManagComponent';
+import CreateBookComponent from './components/CreateBookComponent/CreateBookComponent';
+import EditBookComponent from './components/EditBookComponent/EditBookComponent';
 
 function App() {
   return (
     <>
       <MenuComponent />
-      <BookManagComponent />
+      <EditBookComponent />
       <FooterCompoenent />
     </>
   );

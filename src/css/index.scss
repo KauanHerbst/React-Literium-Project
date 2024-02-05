@@ -941,3 +941,51 @@ svg, img{
     }
   }
 }
+
+// Edit/Create Book Page
+
+.container-edit-book, .container-create-book{
+  width: 578px;
+  background-color: $white-light-3;
+  padding: 24px;
+  box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+
+  input{
+    width: 472px;
+  }
+
+  button{
+    width: 100%;
+    height: 48px;
+    font-size: 22px;
+  }
+
+  @include responsive(s){
+    width: 328px;
+
+  .text-sub-bar{
+    width: 80%;
+  }
+
+  form{
+    margin: 16px;
+  }
+
+  input{
+    width: 236px;
+  }
+
+  button{
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+  }
+  }
+}
+
+.container-edit-book{
+  .text-sub-bar{
+    width: 100%;
+  }
+}

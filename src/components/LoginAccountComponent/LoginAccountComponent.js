@@ -9,7 +9,7 @@ function LoginAccountComponent() {
         <div className="text-sub-bar width-sub-bar-100" />
       </div>
       <div>
-        <form action="post" className="flex-start flex-column">
+        <form method="post" className="flex-start flex-column">
           <InputComponent type="email" association="email">
             Email
           </InputComponent>
