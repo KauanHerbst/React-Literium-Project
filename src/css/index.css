@@ -272,7 +272,7 @@ label {
   }
 }
 
-input[type=text], input[type=email], input[type=password], input[type=name] {
+input[type=text], input[type=email], input[type=password], input[type=name], input[type=tel] {
   width: 296px;
   height: 38px;
   font-size: 18px;
@@ -1439,6 +1439,33 @@ svg, img {
   }
 }
 
+.width-sub-bar-7 {
+  width: 242px;
+}
+@media screen and (max-width: 960px) {
+  .width-sub-bar-7 {
+    width: 280px;
+  }
+}
+
+.width-sub-bar-8 {
+  width: 112px;
+}
+@media screen and (max-width: 960px) {
+  .width-sub-bar-8 {
+    width: 130px;
+  }
+}
+
+.width-sub-bar-9 {
+  width: 72px;
+}
+@media screen and (max-width: 960px) {
+  .width-sub-bar-9 {
+    width: 88px;
+  }
+}
+
 .width-sub-bar-100 {
   width: 100%;
 }
@@ -1739,6 +1766,9 @@ svg, img {
 .container-order .image-product-cart img {
   width: 70%;
 }
+.container-order h2 {
+  font-family: "Roboto", sans-serif;
+}
 @media screen and (max-width: 540px) {
   .container-order {
     max-width: 95%;
@@ -1764,6 +1794,9 @@ svg, img {
   padding: 8px 16px;
   background-color: #F7F6F6;
   box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+}
+.container-fav h2 {
+  font-family: "Roboto", sans-serif;
 }
 .container-fav .image-product-fav {
   border-radius: 12px;
@@ -1817,4 +1850,56 @@ svg, img {
 }
 .container-create-login-account a:hover {
   color: #0D0D0D;
+}
+
+.container-profile-admin {
+  width: 1048px;
+  padding: 24px;
+  background-color: #F7F6F6;
+  border-radius: 24px;
+  box-shadow: 0px -2px 51px 0px rgba(0, 0, 0, 0.3700000048);
+}
+.container-profile-admin .options {
+  border-radius: 12px;
+  padding: 8px;
+  background-color: #800020;
+}
+.container-profile-admin .options h2 {
+  color: #F7F6F6;
+}
+@media screen and (max-width: 960px) {
+  .container-profile-admin .options .option-item-1, .container-profile-admin .options .option-item-2 {
+    transform: scale(0.8);
+    transition: 0.4s ease;
+  }
+  .container-profile-admin .options .option-item-1:hover, .container-profile-admin .options .option-item-2:hover {
+    transform: scale(0.85);
+    background-color: #640011;
+  }
+}
+.container-profile-admin .option-item-1, .container-profile-admin .option-item-2 {
+  padding: 8px;
+  border-radius: 12px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.container-profile-admin .option-item-1:hover, .container-profile-admin .option-item-2:hover {
+  transform: scale(1.03);
+  background-color: #640011;
+}
+.container-profile-admin .container-profile {
+  display: none;
+}
+.container-profile-admin .container-admin {
+  display: none;
+}
+@media screen and (max-width: 1140px) and (min-width: 960px) {
+  .container-profile-admin {
+    width: 965px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .container-profile-admin {
+    width: 364px;
+  }
 }/*# sourceMappingURL=index.css.map */

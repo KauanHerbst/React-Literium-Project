@@ -401,6 +401,27 @@ svg, img{
   }
 }
 
+.width-sub-bar-7{
+  width: 242px;
+  @include responsive(s){
+    width: 280px;
+  }
+}
+
+.width-sub-bar-8{
+  width: 112px;
+  @include responsive(s){
+    width: 130px;
+  }
+}
+
+.width-sub-bar-9{
+  width: 72px;
+  @include responsive(s){
+    width: 88px;
+  }
+}
+
 .width-sub-bar-100{
   width: 100%;
 }
@@ -708,6 +729,10 @@ svg, img{
     }
   }
 
+  h2{
+    font-family: 'Roboto', sans-serif;
+  }
+
   @include responsive(xs){
     max-width: 95%;
   }
@@ -736,6 +761,10 @@ svg, img{
   background-color: $white-light-3;
   box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
 
+  h2{
+    font-family: 'Roboto', sans-serif;
+  }
+
   .image-product-fav{
     border-radius: 12px;
     width: 98px;
@@ -763,7 +792,7 @@ svg, img{
   }
 }
 
-// Create Account Page
+// Create Account / Login Account Page
 
 .container-create-login-account{
   margin-top: 270px;
@@ -796,5 +825,66 @@ svg, img{
     &:hover{
       color: $black-dark-3;
     }
+  }
+}
+
+// Profile Page
+
+.container-profile-admin{
+  width: 1048px;
+  padding: 24px;
+  background-color: $white-light-3;
+  border-radius: 24px;
+  box-shadow: 0px -2px 51px 0px rgba(0, 0, 0, 0.3700000047683716);
+
+  .options{
+    border-radius: 12px;
+    padding: 8px;
+    background-color: $primary-normal;
+
+    h2{
+      color: $white-light-3;
+    }
+
+    @include responsive(s){
+      .option-item-1, .option-item-2{
+       transform: scale(.8);
+       transition: .4s ease;
+        &:hover{
+          transform: scale(.85);
+      background-color: $primary-dark-1;
+        }
+      }
+    }
+  }
+
+  .option-item-1, .option-item-2{
+    padding: 8px;
+    border-radius: 12px;
+    transition: .4s ease;
+    cursor: pointer;
+
+
+    &:hover{
+      transform: scale(1.03);
+      background-color: $primary-dark-1;
+    }
+  }
+
+
+  .container-profile{
+    display: none;
+  }
+
+  .container-admin{
+    display: none;
+  }
+
+  @include responsive(m){
+    width: 965px;
+  }
+
+  @include responsive(s){
+    width: 364px;
   }
 }
