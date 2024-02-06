@@ -989,3 +989,24 @@ svg, img{
     width: 100%;
   }
 }
+
+
+// Search Book
+
+.container-cards{
+  flex-wrap: wrap;
+  width: 900px;
+
+  @include responsive(s){
+    width: 600px;
+  }
+
+  @include responsive(xs){
+    width: 300px;
+  }
+}
+
+.title-container-searchBook{
+  top: 200px;
+
+}

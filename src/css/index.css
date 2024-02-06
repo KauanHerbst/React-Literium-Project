@@ -2015,4 +2015,23 @@ svg, img {
 
 .container-edit-book .text-sub-bar {
   width: 100%;
+}
+
+.container-cards {
+  flex-wrap: wrap;
+  width: 900px;
+}
+@media screen and (max-width: 960px) {
+  .container-cards {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .container-cards {
+    width: 300px;
+  }
+}
+
+.title-container-searchBook {
+  top: 200px;
 }/*# sourceMappingURL=index.css.map */
