@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LogoSvg from '../SvgComponents/LogoSvg/LogoSvg';
 import ButtonCta from '../ButtonsComponents/ButtonCta/ButtonCta';
 import LiteirumSvg from '../SvgComponents/LiteriumSvg/LiteirumSvg';
@@ -8,21 +9,21 @@ function MenuComponent() {
     <header>
       <div className="">
         <div className="menu-desktop">
-          <a href="/">Sobre</a>
+          <Link to="/">Sobre</Link>
           <LogoSvg />
           <ButtonCta>Ver Acervo</ButtonCta>
         </div>
         <div className="menu-mobile">
-          <a href="/">Sobre</a>
+          <Link to="/">Sobre</Link>
           <LiteirumSvg />
           <ButtonCta className="ButtonCtaHeader">Ver Acervo</ButtonCta>
         </div>
         <div className="menu-small">
-          <a href="/">Sobre</a>
+          <Link to="/">Sobre</Link>
           <LiteirumSvg className="ml-2" />
-          <a href="/" className="link-cta-mobile">
+          <Link to="/home" className="link-cta-mobile">
             Ver Acervo
-          </a>
+          </Link>
         </div>
       </div>
     </header>

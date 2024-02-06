@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ButtonCta({ children }) {
   return (
-    <a href="/" className="ButtonCta">
+    <Link to="/home" className="ButtonCta">
       {children}
-    </a>
+    </Link>
   );
 }
 

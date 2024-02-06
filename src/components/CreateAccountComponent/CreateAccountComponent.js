@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import InputComponent from '../LandPageComponents/InputsComponents/InputComponent';
 
 function CreateAccountComponent() {
@@ -20,7 +21,7 @@ function CreateAccountComponent() {
             Senha
           </InputComponent>
           <p className="mg-1">
-            Já possui uma conta? <a href="/">Clique Aqui</a>
+            Já possui uma conta? <Link to="/login">Clique Aqui</Link>
           </p>
           <button
             type="submit"

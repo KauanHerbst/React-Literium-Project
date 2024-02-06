@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LogoSvg from '../LandPageComponents/SvgComponents/Logo2Svg/Logo2Svg';
 import BarsSvg from '../LandPageComponents/SvgComponents/BarsSvg/BarsSvg';
 import GlassSvg from '../LandPageComponents/SvgComponents/GlassSvg/GlassSvg';
 import IconFavSvg from '../LandPageComponents/SvgComponents/IconFavSvg/IconFavSvg';
 import IconCartSvg from '../LandPageComponents/SvgComponents/IconCartSvg/IconCartSvg';
 import IconProfileSvg from '../LandPageComponents/SvgComponents/IconProfileSvg/IconProfileSvg';
-import InputComonent from '../LandPageComponents/InputsComponents/InputComponent';
+import InputComponent from '../LandPageComponents/InputsComponents/InputComponent';
 import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
 import CloseSvg from '../LandPageComponents/SvgComponents/CloseSvg/CloseSvg';
 
@@ -83,7 +84,9 @@ function MenuComponent() {
       <header className="container-menu">
         <div className="menu-home-desktop flex-start ">
           <div>
-            <LogoSvg width="90" />
+            <Link to="/home">
+              <LogoSvg width="90" />
+            </Link>
           </div>
           <div className="flex-start">
             <div className="flex-start container-categories">
@@ -92,26 +95,32 @@ function MenuComponent() {
             </div>
           </div>
           <div className="searchBarMenu flex-start">
-            <InputComonent
+            <InputComponent
               className="flex-start"
               type="search"
               association="search"
             >
               <GlassSvg height="30" width="" />
-            </InputComonent>
+            </InputComponent>
           </div>
           <div className="flex-start icons-menu-desktop">
             <div className="mt-1 element-icon-menu">
-              <IconFavSvg width="30" height="32" />
-              <h3 className="mg-1">Favoritos</h3>
+              <Link to="/favorites">
+                <IconFavSvg width="30" height="32" />
+                <h3 className="mg-1">Favoritos</h3>
+              </Link>
             </div>
             <div className="mt-1 element-icon-menu">
-              <IconCartSvg width="30" height="32" />
-              <h3 className="mg-1">Carrinho</h3>
+              <Link to="/cart">
+                <IconCartSvg width="30" height="32" />
+                <h3 className="mg-1">Carrinho</h3>
+              </Link>
             </div>
             <div className="mt-1 element-icon-menu">
-              <IconProfileSvg width="30" height="32" />
-              <h3 className="mg-1">Perfil</h3>
+              <Link to="/profile">
+                <IconProfileSvg width="30" height="32" />
+                <h3 className="mg-1">Perfil</h3>
+              </Link>
             </div>
           </div>
         </div>
@@ -122,23 +131,31 @@ function MenuComponent() {
                 <BarsSvg width="22" height="22" className="mr-2 " />
               </div>
               <div className="ml-3">
-                <LogoSvg width="50" height="50" className="mr-3" />
+                <Link to="/home">
+                  <LogoSvg width="50" height="50" className="mr-3" />
+                </Link>
               </div>
               <div className="flex-start icons-menu-mobile">
-                <IconFavSvg className="ml-1 element-icon-menu" />
-                <IconCartSvg className="ml-1 element-icon-menu" />
-                <IconProfileSvg className="ml-1 element-icon-menu" />
+                <Link to="/favorites">
+                  <IconFavSvg className="ml-1 element-icon-menu" />
+                </Link>
+                <Link to="/cart">
+                  <IconCartSvg className="ml-1 element-icon-menu" />
+                </Link>
+                <Link to="/profile">
+                  <IconProfileSvg className="ml-1 element-icon-menu" />
+                </Link>
               </div>
             </div>
             <div className="mg-2 flex-start">
               <div className="searchBarMenu flex-start">
-                <InputComonent
+                <InputComponent
                   className="flex-start"
                   type="search"
                   association="search"
                 >
                   <GlassSvg height="30" width="" />
-                </InputComonent>
+                </InputComponent>
               </div>
             </div>
           </div>
@@ -148,7 +165,7 @@ function MenuComponent() {
         <div className="categories-menu-login flex-start">
           <IconProfileSvg width="30" height="30" className="mr-2" />
           <h5>
-            <a href="/">Login/Cadastro</a>
+            <Link to="/account">Login/Cadastro</Link>
           </h5>
           <CloseSvg width="30" height="30" className="close-icon ml-2" />
         </div>

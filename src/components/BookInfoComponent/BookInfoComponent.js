@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BookBlue from '../../images/BookBlue.webp';
 
 function BookInfoComponent() {
@@ -15,9 +16,11 @@ function BookInfoComponent() {
         </div>
       </div>
       <div className="flex-item-1 flex-start buttons flex-column">
-        <button type="button" className="buttonAddCart btn-addFav mt-2">
-          Editar
-        </button>
+        <Link to="/editBook">
+          <button type="button" className="buttonAddCart btn-addFav mt-2">
+            Editar
+          </button>
+        </Link>
         <button
           type="button"
           className="buttonAddCart btn-addFav mt-2 btn-delete"

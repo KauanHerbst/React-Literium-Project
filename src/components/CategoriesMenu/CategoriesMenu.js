@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CategoriesMenu({ children, className }) {
   const mockCategories = [
@@ -14,9 +15,9 @@ function CategoriesMenu({ children, className }) {
   return (
     <ul className={className}>
       {mockCategories.map((categoria) => (
-        <li key={categoria} className="mg-1">
-          {categoria}
-        </li>
+        <Link key={categoria} to="/search">
+          <li className="mg-1">{categoria}</li>
+        </Link>
       ))}
     </ul>
   );

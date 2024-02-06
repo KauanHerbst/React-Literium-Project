@@ -49,5 +49,6 @@ module.exports = {
     'jsx-a11y/label-has-associated-control': 'off',
     'no-console': 'off',
     'no-dupe-else-if': 'off',
+    'react/function-component-definition': 'off',
   },
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LogoSvg from '../SvgComponents/LogoSvg/LogoSvg';
 import InstagramSvg from '../SvgComponents/InstagramSvg/InstagramSvg';
 import TwitterSvg from '../SvgComponents/TwitterSvg/TwitterSvg';
@@ -15,18 +16,18 @@ function FooterComponent() {
             <LogoSvg />
           </div>
           <div className="flex-start mt-1 ">
-            <a href="/">
+            <Link to="/">
               <InstagramSvg className="mr-1" />
-            </a>
-            <a href="/">
+            </Link>
+            <Link to="/">
               <TwitterSvg className="mr-1" />
-            </a>
-            <a href="/">
+            </Link>
+            <Link to="/">
               <GithubSvg className="mr-1" />
-            </a>
-            <a href="/">
+            </Link>
+            <Link to="/">
               <LinkedinSvg className="mr-1" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -37,18 +38,18 @@ function FooterComponent() {
         </div>
         <div className="flex-start">
           <div className="flex-start container-footer-mobile-social ">
-            <a href="/" className="mr-1">
+            <Link to="/" className="mr-1">
               <InstagramSvg className="mr-1" />
-            </a>
-            <a href="/" className="mr-1">
+            </Link>
+            <Link to="/" className="mr-1">
               <TwitterSvg className="mr-1" />
-            </a>
-            <a href="/" className="mr-1">
+            </Link>
+            <Link to="/" className="mr-1">
               <GithubSvg className="mr-1" />
-            </a>
-            <a href="/" className="mr-1">
+            </Link>
+            <Link to="/" className="mr-1">
               <LinkedinSvg className="mr-1" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -63,24 +64,24 @@ function FooterComponent() {
           <div className="flex-between">
             <div className="mt-4">
               <h3 className="mg-3">
-                <a href="/">Sobre</a>
+                <Link to="/">Sobre</Link>
               </h3>
               <h3 className="mg-3">
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </h3>
               <h3 className="mg-3">
-                <a href="/">Contato</a>
+                <Link to="/">Contato</Link>
               </h3>
             </div>
             <div className="mt-4">
               <h3 className="mg-3">
-                <a href="/">Sobre</a>
+                <Link to="/">Sobre</Link>
               </h3>
               <h3 className="mg-3">
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </h3>
               <h3 className="mg-3">
-                <a href="/">Contato</a>
+                <Link to="/">Contato</Link>
               </h3>
             </div>
           </div>

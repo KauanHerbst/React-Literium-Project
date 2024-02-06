@@ -24,7 +24,6 @@ function LandingPage() {
       <SectionSixComponent />
       <SectionSevenComponent />
       <SectionEightComponent />
-      <FooterComponent />
     </>
   );
 }

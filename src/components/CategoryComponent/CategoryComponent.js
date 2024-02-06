@@ -4,6 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Link } from 'react-router-dom';
 import BookBlue from '../../images/BookBlue.webp';
 import BookRed from '../../images/BookRed.webp';
 import BookYellow from '../../images/BookYellow.webp';
@@ -48,9 +49,9 @@ function CategoryComponent({ children, category }) {
           <div className="text-sub-bar width-sub-bar-100" />
         </div>
         <div className="mg-1">
-          <a href="/" className="color-black">
+          <Link to="/search" className="color-black">
             Ver mais
-          </a>
+          </Link>
         </div>
       </div>
       <div className="container-slider-cardsbuy">

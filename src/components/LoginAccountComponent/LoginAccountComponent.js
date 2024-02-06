@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import InputComponent from '../LandPageComponents/InputsComponents/InputComponent';
 
 function LoginAccountComponent() {
@@ -17,7 +18,7 @@ function LoginAccountComponent() {
             Senha
           </InputComponent>
           <p className="mg-1">
-            Ainda não possui uma conta? <a href="/">Clique Aqui</a>
+            Ainda não possui uma conta? <Link to="/account">Clique Aqui</Link>
           </p>
           <button
             type="submit"

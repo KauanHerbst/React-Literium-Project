@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import InputComponent from '../LandPageComponents/InputsComponents/InputComponent';
 import IconProfileSvg from '../LandPageComponents/SvgComponents/IconProfileSvg/IconProfileSvg';
 import PadlockSvg from '../LandPageComponents/SvgComponents/PadlockSvg/PadlockSvg';
@@ -158,12 +159,16 @@ function ProfileComponent() {
             <h5>9999</h5>
           </div>
           <div className="flex-start flex-responsive">
-            <button type="button" className="buttonPattern mg-2">
-              Gerenciar Livros
-            </button>
-            <button type="button" className="buttonPattern mg-2">
-              Cadastrar Livro
-            </button>
+            <Link to="/management">
+              <button type="button" className="buttonPattern mg-2">
+                Gerenciar Livros
+              </button>
+            </Link>
+            <Link to="/createBook">
+              <button type="button" className="buttonPattern mg-2">
+                Cadastrar Livro
+              </button>
+            </Link>
           </div>
         </div>
       </div>

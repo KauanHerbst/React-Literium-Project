@@ -552,6 +552,10 @@ header {
   transform: scale(1.2);
 }
 
+ul a {
+  color: #000;
+}
+
 .container-footer-1 {
   background-color: #800020;
   width: 100%;

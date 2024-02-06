@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import StarsSvg from '../LandPageComponents/SvgComponents/StarsSvg/StarsSvg';
 
 function CardBuyComponent({ children, name, price, img }) {
@@ -19,9 +20,11 @@ function CardBuyComponent({ children, name, price, img }) {
         <h5>R${price}</h5>
       </div>
       <div className="ml-1 mt-1">
-        <button type="submit" className="buttonAddCart mg-1">
-          Ver Produto
-        </button>
+        <Link to="/product" target="_blank">
+          <button type="submit" className="buttonAddCart mg-1">
+            Ver Produto
+          </button>
+        </Link>
       </div>
     </div>
   );
