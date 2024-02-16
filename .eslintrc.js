@@ -50,5 +50,10 @@ module.exports = {
     'no-console': 'off',
     'no-dupe-else-if': 'off',
     'react/function-component-definition': 'off',
+    'no-nested-ternary': 'off',
+    'class-methods-use-this': 'off',
+    'react/jsx-no-constructed-context-values': 'off',
+    'react/jsx-no-useless-fragment': "off",
+    'no-use-before-define': 'off',
   },
 };

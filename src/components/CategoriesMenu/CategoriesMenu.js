@@ -1,24 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CategoryService from '../../services/CategoryService/CategoryService';
 
 function CategoriesMenu({ children, className }) {
-  const mockCategories = [
-    'Categoria #1',
-    'Categoria #2',
-    'Categoria #3',
-    'Categoria #4',
-    'Categoria #5',
-    'Categoria #6',
-    'Categoria #7',
-  ];
+  const [categories, setCategories] = React.useState(null);
+  const categoryService = new CategoryService();
+
+  React.useEffect(() => {
+    async function fetchData() {
+      try {
+        const dataCategories = await categoryService.findCategories();
+        setCategories(dataCategories);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchData();
+  }, []);
 
   return (
     <ul className={className}>
-      {mockCategories.map((categoria) => (
-        <Link key={categoria} to="/search">
-          <li className="mg-1">{categoria}</li>
-        </Link>
-      ))}
+      {categories ? (
+        categories.content && categories.content.length > 0 ? (
+          categories.content.map((categoria) => (
+            <Link key={categoria.id} to={`/categories/${categoria.id}`}>
+              <li className="mg-1">{categoria.name}</li>
+            </Link>
+          ))
+        ) : (
+          <li>Nenhuma categoria disponível</li>
+        )
+      ) : (
+        <li>Carregando...</li>
+      )}
     </ul>
   );
 }

@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import InputComponent from '../LandPageComponents/InputsComponents/InputComponent';
 import IconProfileSvg from '../LandPageComponents/SvgComponents/IconProfileSvg/IconProfileSvg';
 import PadlockSvg from '../LandPageComponents/SvgComponents/PadlockSvg/PadlockSvg';
+import UserService from '../../services/UserService/UserService';
+import { useGlobalContext } from '../../Context/GlobalContext/GlobalContext';
 
 function ProfileComponent() {
+  const { dispatch } = useGlobalContext();
   const [option, setOption] = React.useState(0);
 
   React.useEffect(() => {
@@ -51,6 +54,32 @@ function ProfileComponent() {
     };
   }, []);
 
+  const [dadosUser, setDadosUser] = React.useState(null);
+  const [isAdmin, setIsAdmin] = React.useState(false);
+  React.useEffect(() => {
+    const userService = new UserService();
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    function handleDados() {
+      if (userData) {
+        setDadosUser(userData);
+      }
+    }
+
+    function handleRoles() {
+      if (userData) {
+        setIsAdmin(userService.isUserAdmin());
+      }
+    }
+
+    handleDados();
+    handleRoles();
+  }, []);
+
+  function logout() {
+    localStorage.removeItem('userData');
+    dispatch({ type: 'LOUGOUT' });
+  }
+
   return (
     <section className="container flex-column ">
       <div className="container-profile-admin">
@@ -60,8 +89,12 @@ function ProfileComponent() {
             <h2>Perfil</h2>
           </div>
           <div className="flex-start option-item-2">
-            <PadlockSvg className="mr-2" />
-            <h2>Administração</h2>
+            {isAdmin && (
+              <>
+                <PadlockSvg className="mr-2" />
+                <h2>Administração</h2>
+              </>
+            )}
           </div>
         </div>
         <div className="container-profile mg-2">
@@ -75,6 +108,8 @@ function ProfileComponent() {
                 type="name"
                 association="nome"
                 className="mg-1 flex-start flex-column flex-no-center"
+                disable
+                state={dadosUser ? dadosUser.name : null}
               >
                 Nome
               </InputComponent>
@@ -82,6 +117,8 @@ function ProfileComponent() {
                 type="email"
                 association="email"
                 className="mg-1 flex-start flex-column flex-no-center"
+                disable
+                state={dadosUser ? dadosUser.email : null}
               >
                 Email
               </InputComponent>
@@ -89,6 +126,7 @@ function ProfileComponent() {
                 type="tel"
                 association="contato"
                 className="mg-1 flex-start flex-column flex-no-center"
+                disable
               >
                 Contato
               </InputComponent>
@@ -105,6 +143,7 @@ function ProfileComponent() {
                   type="text"
                   association="rua"
                   className="mg-1 flex-start flex-column flex-no-center"
+                  disable
                 >
                   Rua
                 </InputComponent>
@@ -112,6 +151,7 @@ function ProfileComponent() {
                   type="text"
                   association="bairro"
                   className="mg-1 flex-start flex-column flex-no-center"
+                  disable
                 >
                   Bairro
                 </InputComponent>
@@ -119,6 +159,7 @@ function ProfileComponent() {
                   type="text"
                   association="numero"
                   className="mg-1 flex-start flex-column flex-no-center"
+                  disable
                 >
                   Número
                 </InputComponent>
@@ -128,6 +169,7 @@ function ProfileComponent() {
                   type="text"
                   association="cidade"
                   className="mg-1 flex-start flex-column flex-no-center"
+                  disable
                 >
                   Cidade
                 </InputComponent>
@@ -135,6 +177,7 @@ function ProfileComponent() {
                   type="text"
                   association="estado"
                   className="mg-1 flex-start flex-column flex-no-center"
+                  disable
                 >
                   Estado
                 </InputComponent>
@@ -142,10 +185,22 @@ function ProfileComponent() {
                   type="text"
                   association="cep"
                   className="mg-1 flex-start flex-column flex-no-center"
+                  disable
                 >
                   CEP
                 </InputComponent>
               </div>
+            </div>
+            <div className="flex-start">
+              <Link to="/home">
+                <button
+                  type="button"
+                  className="buttonPattern"
+                  onClick={logout}
+                >
+                  Sair
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -164,7 +219,7 @@ function ProfileComponent() {
                 Gerenciar Livros
               </button>
             </Link>
-            <Link to="/createBook">
+            <Link to="/createbook">
               <button type="button" className="buttonPattern mg-2">
                 Cadastrar Livro
               </button>

@@ -1,10 +1,11 @@
 import React from 'react';
 
-function GlassSvg({ children, width, height }) {
+function GlassSvg({ children, width, height, className }) {
   width = width || 43;
   height = height || 43;
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 63 43"

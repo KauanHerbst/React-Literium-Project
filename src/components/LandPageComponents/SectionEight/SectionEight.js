@@ -10,18 +10,25 @@ function SectionEight() {
         <div className="text-sub-bar width-sub-bar-6" />
       </div>
       <div className="mt-4">
-        <InputComponent type="text" association="nome">
-          Nome
-        </InputComponent>
-        <InputComponent type="email" association="email">
-          Email
-        </InputComponent>
-        <InputComponent type="password" association="senha">
-          Senha
-        </InputComponent>
-        <InputComponent type="password" association="senha-repeat">
-          Repetir Senha
-        </InputComponent>
+        <div className="flex-start flex-column flex-no-center mt-1">
+          <label htmlFor="name">Nome</label>
+          <input required type="text" name="name" />
+        </div>
+
+        <div className="flex-start flex-column flex-no-center mt-1">
+          <label htmlFor="email">Email</label>
+          <input required type="email" name="email" />
+        </div>
+
+        <div className="flex-start flex-column flex-no-center mt-1">
+          <label htmlFor="senha">Senha</label>
+          <input required type="password" name="senha" />
+        </div>
+
+        <div className="flex-start flex-column flex-no-center mt-1">
+          <label htmlFor="senha-repeat">Repetir Senha</label>
+          <input required type="password" name="senha-repeat" />
+        </div>
         <div className="mg-4">
           <ButtonAccountComponent />
         </div>

@@ -55,3 +55,29 @@
   width: 120px;
 
 }
+
+
+.heartSvg{
+  top: 0;
+  left: 65px;
+  transition: .8s ease;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    fill: $primary-normal;
+  }
+}
+
+.heart-active{
+  fill: $primary-normal;
+  transition: .8s ease;
+   &:hover{
+    fill: none;
+   }
+}
+
+.searchIconDesktop, .searchIconMobile{
+  &:hover{
+    cursor: pointer;
+  }
+}

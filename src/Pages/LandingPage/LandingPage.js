@@ -9,12 +9,10 @@ import SectionFiveComponent from '../../components/LandPageComponents/SectionFiv
 import SectionSixComponent from '../../components/LandPageComponents/SectionSix/SectionSix';
 import SectionSevenComponent from '../../components/LandPageComponents/SectionSeven/SectionSeven';
 import SectionEightComponent from '../../components/LandPageComponents/SectionEight/SectionEight';
-import FooterComponent from '../../components/LandPageComponents/FooterComponent/FooterComponent';
 
 function LandingPage() {
   return (
     <>
-      <MenuComponent />
       <HeroComponent />
       <SectionOneComponent />
       <SectionTwoComponent />

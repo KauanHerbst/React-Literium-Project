@@ -601,7 +601,7 @@ svg, img{
 
     @include responsive(s){
       width: 216px;
-      height: 288px;
+      height: 356px;
     }
 
     @include responsive(xs){
@@ -615,21 +615,22 @@ svg, img{
     padding: 16px;
     background-color: $white-light-3;
     width: 372px;
-    height: 282px;
+    height: 336px;
     box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
     @include responsive(m){
       width: 364px;
-      height: 278px;
+      height: 336px;
     }
 
     @include responsive(s){
       width: 306px;
-      height: 278px;
+      height: 356px;
+      max-width: 388px;
     }
 
     @include responsive(xs){
       width: 336px;
-      height: 292px;
+      height: 356px;
     }
 
     .calc-frete{
@@ -735,6 +736,9 @@ svg, img{
 
   @include responsive(xs){
     max-width: 95%;
+    .image-product-cart{
+      margin-top: 16px;
+    }
   }
 }
 
@@ -894,7 +898,7 @@ svg, img{
 .container-book-info{
   border-radius: 18px;
   width: 800px;
-  height: 128px;
+  height: 154px;
   padding: 8px 16px;
   background-color: $white-light-3;
   box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
@@ -1009,4 +1013,36 @@ svg, img{
 .title-container-searchBook{
   top: 200px;
 
+}
+
+.delete-container{
+  display: none;
+  transition: .4s ease;
+  .sub-container{
+    border-radius: 24px;
+    width: 556px;
+    height: 156px;
+    background-color: $white-light-3;
+    box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  .btn-delete{
+    background-color: $primary-dark-2;
+    &:hover{
+      background-color: $primary-dark-3;
+    }
+  }
+
+  @include responsive(s){
+    .sub-container{
+      h2{
+        font-size: 24px;
+      }
+      width: 336px;
+      height: 256px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  }
 }

@@ -893,6 +893,29 @@ ul a {
   width: 120px;
 }
 
+.heartSvg {
+  top: 0;
+  left: 65px;
+  transition: 0.8s ease;
+}
+.heartSvg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  fill: #800020;
+}
+
+.heart-active {
+  fill: #800020;
+  transition: 0.8s ease;
+}
+.heart-active:hover {
+  fill: none;
+}
+
+.searchIconDesktop:hover, .searchIconMobile:hover {
+  cursor: pointer;
+}
+
 .box-float-big {
   font-family: "Lora", serif;
   font-size: 18px;
@@ -946,7 +969,11 @@ ul a {
 #box-hero-1 {
   top: 10px;
   right: 100px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: 0.4s ease;
+  animation: box-animation 10s ease-out 2s alternate infinite;
 }
 @media screen and (max-width: 1140px) and (min-width: 960px) {
   #box-hero-1 {
@@ -964,7 +991,11 @@ ul a {
 #box-hero-2 {
   top: 20px;
   right: 500px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: 0.4s ease;
+  animation: box-animation-reverse 10s ease-in 1s alternate infinite;
 }
 @media screen and (max-width: 1140px) and (min-width: 960px) {
   #box-hero-2 {
@@ -983,6 +1014,10 @@ ul a {
   top: 430px;
   right: 520px;
   transition: 0.4s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  animation: box-animation 10s ease-in-out alternate infinite;
 }
 @media screen and (max-width: 1140px) and (min-width: 960px) {
   #box-hero-3 {
@@ -1000,6 +1035,7 @@ ul a {
 #box-two-1 {
   top: 10px;
   left: 400px;
+  animation: box-animation-reverse-2 8s ease-in-out alternate infinite;
 }
 @media screen and (max-width: 960px) {
   #box-two-1 {
@@ -1010,6 +1046,7 @@ ul a {
 #box-two-2 {
   top: 210px;
   left: 50px;
+  animation: box-animation-2 10s ease 2s alternate infinite;
 }
 @media screen and (max-width: 960px) {
   #box-two-2 {
@@ -1064,6 +1101,74 @@ ul a {
   transform: scale(1.2);
 }
 
+@keyframes box-animation {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(80px, 0) scale(1.3);
+  }
+  50% {
+    transform: translate(0, 80px) scale(1.2);
+  }
+  75% {
+    transform: translate(-80px, 0) scale(1.3);
+  }
+  100% {
+    transform: translate(0, -80px) scale(1);
+  }
+}
+@keyframes box-animation-reverse {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(0, 80px) scale(1.3);
+  }
+  50% {
+    transform: translate(80px, 0) scale(1.2);
+  }
+  75% {
+    transform: translate(0, -80px) scale(1.3);
+  }
+  100% {
+    transform: translate(-80px, 0) scale(1);
+  }
+}
+@keyframes box-animation-2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(30px, 0) scale(1.1);
+  }
+  50% {
+    transform: translate(0, 30px) scale(1.2);
+  }
+  75% {
+    transform: translate(-30px, 0) scale(1.1);
+  }
+  100% {
+    transform: translate(0, -30px) scale(1);
+  }
+}
+@keyframes box-animation-reverse-2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(0, 30px) scale(1.3);
+  }
+  50% {
+    transform: translate(30px, 0) scale(1.2);
+  }
+  75% {
+    transform: translate(0, -30px) scale(1.3);
+  }
+  100% {
+    transform: translate(-30px, 0) scale(1);
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -1672,7 +1777,7 @@ svg, img {
 @media screen and (max-width: 960px) {
   .container-product .image-product {
     width: 216px;
-    height: 288px;
+    height: 356px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -1686,25 +1791,26 @@ svg, img {
   padding: 16px;
   background-color: #F7F6F6;
   width: 372px;
-  height: 282px;
+  height: 336px;
   box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
 }
 @media screen and (max-width: 1140px) and (min-width: 960px) {
   .container-product .product-info {
     width: 364px;
-    height: 278px;
+    height: 336px;
   }
 }
 @media screen and (max-width: 960px) {
   .container-product .product-info {
     width: 306px;
-    height: 278px;
+    height: 356px;
+    max-width: 388px;
   }
 }
 @media screen and (max-width: 540px) {
   .container-product .product-info {
     width: 336px;
-    height: 292px;
+    height: 356px;
   }
 }
 .container-product .product-info .calc-frete {
@@ -1803,6 +1909,9 @@ svg, img {
 @media screen and (max-width: 540px) {
   .container-order {
     max-width: 95%;
+  }
+  .container-order .image-product-cart {
+    margin-top: 16px;
   }
 }
 
@@ -1938,7 +2047,7 @@ svg, img {
 .container-book-info {
   border-radius: 18px;
   width: 800px;
-  height: 128px;
+  height: 154px;
   padding: 8px 16px;
   background-color: #F7F6F6;
   box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
@@ -2038,4 +2147,34 @@ svg, img {
 
 .title-container-searchBook {
   top: 200px;
+}
+
+.delete-container {
+  display: none;
+  transition: 0.4s ease;
+}
+.delete-container .sub-container {
+  border-radius: 24px;
+  width: 556px;
+  height: 156px;
+  background-color: #F7F6F6;
+  box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+}
+.delete-container .btn-delete {
+  background-color: #450005;
+}
+.delete-container .btn-delete:hover {
+  background-color: #220000;
+}
+@media screen and (max-width: 960px) {
+  .delete-container .sub-container {
+    width: 336px;
+    height: 256px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .delete-container .sub-container h2 {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=index.css.map */
