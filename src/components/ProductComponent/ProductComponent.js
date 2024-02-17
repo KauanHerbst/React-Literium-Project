@@ -138,7 +138,13 @@ function ProductComponent() {
         heartSvg.addEventListener('click', removeFavorite);
       }
     }
-
+    function setFavoriteClass() {
+      heartSvg = heartRef.current;
+      if (isFavorite && heartSvg) {
+        heartSvg.classList.add('heart-active');
+      }
+    }
+    setFavoriteClass();
     return () => {
       if (btnSub && btnSum) {
         btnSub.removeEventListener('click', subProduct);
@@ -176,7 +182,7 @@ function ProductComponent() {
     function handleIsOnCart() {
       if (orderData) {
         orderData.map((order) => {
-          if (order.bookId === Number(id)) {
+          if (order.bookId === Number(id) && productData) {
             productData.amount = order.amount;
             setIsOnCart(true);
             setCurrentProductAmount(order.amount);
@@ -186,17 +192,9 @@ function ProductComponent() {
       }
     }
 
-    function setFavoriteClass() {
-      heartSvg = heartRef.current;
-      if (isFavorite) {
-        heartSvg.classList.add('heart-active');
-      }
-    }
-
     handleIsFavorite();
     handleIsOnCart();
-    setFavoriteClass();
-  }, [favoriteData, isFavorite, isOnCart, orderData]);
+  }, [favoriteData, isFavorite, isOnCart, orderData, productData]);
 
   React.useEffect(() => {
     function updateButton() {
