@@ -229,7 +229,7 @@ function ProductComponent() {
                   </div>
                   <div className="mg-2 position-relative">
                     <HeartNoFillSvg
-                      className="position-absolute heartSvg mg-1 ml-3 mb-1"
+                      className="position-absolute heartSvg mg-1 ml-3 mb-1 heart"
                       isRef={heartRef}
                     />
                     <h2 className="mg-1">{productData.name}</h2>

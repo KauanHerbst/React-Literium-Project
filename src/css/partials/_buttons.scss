@@ -55,6 +55,7 @@
   transition: .4s ease;
 
   &:hover{
+    animation: none;
     background-color: $primary-dark-3;
     transform: scale(1.1);
     color: $white-light-3

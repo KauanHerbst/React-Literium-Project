@@ -1,15 +1,19 @@
 import React from 'react';
-import InputComponent from '../InputsComponents/InputComponent';
+import Aos from 'aos';
 import ButtonAccountComponent from '../ButtonsComponents/ButtonAccountComponent/ButtonAccountComponent';
+import 'aos/dist/aos.css';
 
 function SectionEight() {
+  React.useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
-    <section className="container flex-start flex-column">
-      <div className="">
+    <section className="container flex-start flex-column ">
+      <div className="" data-aos="fade-up">
         <h2>Crie Sua Conta Agora</h2>
         <div className="text-sub-bar width-sub-bar-6" />
       </div>
-      <div className="mt-4">
+      <div className="mt-4" data-aos="fade-up">
         <div className="flex-start flex-column flex-no-center mt-1">
           <label htmlFor="name">Nome</label>
           <input required type="text" name="name" />

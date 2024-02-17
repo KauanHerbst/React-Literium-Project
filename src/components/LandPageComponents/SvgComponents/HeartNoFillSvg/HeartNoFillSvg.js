@@ -1,13 +1,14 @@
 import React from 'react';
 
-function HeartNoFillSvg({ className, isRef }) {
+function HeartNoFillSvg({ className, isRef, viewBox }) {
+  viewBox = viewBox || '0 0 48 43';
   return (
     <svg
       ref={isRef}
       className={className}
       width="38"
       height="33"
-      viewBox="0 0 48 43"
+      viewBox={viewBox}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

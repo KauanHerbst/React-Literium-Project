@@ -34,20 +34,20 @@ function SliderSwiperComponent() {
 
   const dados = [
     {
-      name: 'Kauan',
+      name: 'Pedro',
       img: ImagePeopleOne,
     },
     {
-      name: 'Herbst',
+      name: 'Sarah',
       img: ImagePeopleTwo,
     },
     {
-      name: 'Sousa',
+      name: 'Lara',
       img: ImagePeopleThree,
     },
     {
-      name: 'Goveia',
-      img: ImagePeopleOne,
+      name: 'Ingrid',
+      img: ImagePeopleTwo,
     },
   ];
 

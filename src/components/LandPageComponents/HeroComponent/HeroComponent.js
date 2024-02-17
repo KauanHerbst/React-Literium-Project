@@ -1,20 +1,25 @@
 import React from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import ButtonCta from '../ButtonsComponents/ButtonCta/ButtonCta';
 import BookWebp from '../../../images/BookImage.webp';
 import LoveSvg from '../SvgComponents/LoveSvg/LoveSvg';
 import LikeSvg from '../SvgComponents/LikeSvg/LikeSvg';
 
 function HeroComponent() {
+  React.useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <main className="container">
-      <div className="flex-item-1 mt-5">
+      <div className="flex-item-1 mt-5 " data-aos="zoom-in-up">
         <div className="position-relative hero-title">
           <h1 className="mg-1">LITERIUM</h1>
           <p className="mg-1">O maior acervo de livros do Brasil</p>
           <ButtonCta className="mg-1">Ver Acervo</ButtonCta>
         </div>
       </div>
-      <div className="flex-item-3 position-relative">
+      <div className="flex-item-3 position-relative" data-aos="zoom-in-up">
         <img src={BookWebp} className="image-hero overflow-hidden" />
         <div id="box-hero-1" className="box-float-big position-absolute">
           Amo Livros

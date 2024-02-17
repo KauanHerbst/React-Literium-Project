@@ -158,4 +158,16 @@ export default class BookService {
     }
     return null;
   }
+
+  async totalBooks() {
+    try {
+      const response = await axios.get(
+        `${process.env.REACT_APP_API_URL}/books?size=1`
+      );
+      return response.data.totalElements;
+    } catch (e) {
+      console.log(e);
+    }
+    return null;
+  }
 }

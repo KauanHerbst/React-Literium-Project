@@ -211,7 +211,7 @@ function MapComSetaSvg() {
           </g>
           <path
             className=""
-            id="Trinagulo"
+            id="Triangulo"
             d="M135.341 137L101.281 88.6252L169.401 88.6252L135.341 137Z"
             fill="#450005"
           />
@@ -233,7 +233,7 @@ function MapComSetaSvg() {
             />
           </g>
           <path
-            id="Trinagulo_2"
+            id="Triangulo_2"
             d="M240.341 297L206.281 248.625L274.401 248.625L240.341 297Z"
             fill="#450005"
           />
@@ -255,7 +255,7 @@ function MapComSetaSvg() {
             />
           </g>
           <path
-            id="Trinagulo_3"
+            id="Triangulo_3"
             d="M293.341 481L259.281 432.625L327.401 432.625L293.341 481Z"
             fill="#450005"
           />
@@ -277,7 +277,7 @@ function MapComSetaSvg() {
             />
           </g>
           <path
-            id="Trinangulo"
+            id="Triangulo_4"
             d="M401.341 141L367.281 92.6252L435.401 92.6252L401.341 141Z"
             fill="#450005"
           />

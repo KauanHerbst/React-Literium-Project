@@ -21,6 +21,7 @@ import { GlobalProvider } from './Context/GlobalContext/GlobalContext';
 import SearchBookPage from './Pages/SearchBookPage/SearchBookPage';
 
 import 'react-toastify/dist/ReactToastify.min.css';
+import NotFoundComponent from './components/NotFoundComponent/NotFoundComponent';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -106,6 +107,7 @@ function App() {
         />
         <Route path="/search/:name" element={<SearchBookPage />} />
         <Route path="/categories/:id" element={<SearchCategoryPage />} />
+        <Route path="*" element={<NotFoundComponent />} />
       </Routes>
       <FooterCompoenent />
     </GlobalProvider>

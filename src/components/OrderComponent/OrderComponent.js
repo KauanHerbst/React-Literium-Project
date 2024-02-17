@@ -49,12 +49,10 @@ function OrderComponent({ bookId, userId, amount }) {
     const btnSum = btnSumRef.current;
 
     function addProduct() {
-      console.log('add');
       setProductAmount((prevAmount) => prevAmount + 1);
     }
     function subProduct() {
       if (productAmount > 1) {
-        console.log('remove');
         setProductAmount((prevAmount) => prevAmount - 1);
       }
     }

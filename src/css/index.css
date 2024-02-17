@@ -14,6 +14,7 @@
 }
 @media screen and (max-width: 960px) {
   .container {
+    overflow: hidden;
     flex-direction: column;
     padding: 128px 18px;
   }
@@ -55,6 +56,10 @@
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
 }
 
 .flex {
@@ -655,6 +660,7 @@ ul a {
   transition: 0.4s ease;
 }
 .btn-account:hover {
+  animation: none;
   background-color: #220000;
   transform: scale(1.1);
   color: #F7F6F6;
@@ -973,6 +979,7 @@ ul a {
      -moz-user-select: none;
           user-select: none;
   transition: 0.4s ease;
+  overflow: hidden;
   animation: box-animation 10s ease-out 2s alternate infinite;
 }
 @media screen and (max-width: 1140px) and (min-width: 960px) {
@@ -995,6 +1002,7 @@ ul a {
      -moz-user-select: none;
           user-select: none;
   transition: 0.4s ease;
+  overflow: hidden;
   animation: box-animation-reverse 10s ease-in 1s alternate infinite;
 }
 @media screen and (max-width: 1140px) and (min-width: 960px) {
@@ -1017,6 +1025,7 @@ ul a {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  overflow: hidden;
   animation: box-animation 10s ease-in-out alternate infinite;
 }
 @media screen and (max-width: 1140px) and (min-width: 960px) {
@@ -1035,10 +1044,12 @@ ul a {
 #box-two-1 {
   top: 10px;
   left: 400px;
+  overflow: hidden;
   animation: box-animation-reverse-2 8s ease-in-out alternate infinite;
 }
 @media screen and (max-width: 960px) {
   #box-two-1 {
+    animation: none;
     left: 200px;
   }
 }
@@ -1046,10 +1057,12 @@ ul a {
 #box-two-2 {
   top: 210px;
   left: 50px;
+  overflow: hidden;
   animation: box-animation-2 10s ease 2s alternate infinite;
 }
 @media screen and (max-width: 960px) {
   #box-two-2 {
+    animation: none;
     top: 95px;
   }
 }
@@ -1064,6 +1077,10 @@ ul a {
 #box-seven-1 {
   top: 10px;
   left: 270px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  animation: box-animation 10s ease-in-out alternate infinite;
 }
 @media screen and (max-width: 960px) {
   #box-seven-1 {
@@ -1074,11 +1091,19 @@ ul a {
 #box-seven-2 {
   top: 200px;
   left: -20px;
+  animation: box-animation-reverse 10s ease-in 1s alternate infinite;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 #box-seven-3 {
   top: 230px;
   left: 240px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  animation: box-animation 10s ease-out 2s alternate infinite;
 }
 @media screen and (max-width: 960px) {
   #box-seven-3 {
@@ -1169,6 +1194,98 @@ ul a {
     transform: translate(-30px, 0) scale(1);
   }
 }
+.line-Animation {
+  animation: lineAnimation 5s ease-out infinite;
+}
+
+@keyframes lineAnimation {
+  0% {
+    transform: scaleX(0.8);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0.8);
+  }
+}
+@keyframes animation-image-card {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.img-card-ex-1 img {
+  animation: animation-image-card 3s ease 1s forwards 1;
+}
+
+.img-card-ex-2 img {
+  animation: animation-image-card 3s ease 1.5s forwards 1;
+}
+
+.img-card-ex-3 img {
+  animation: animation-image-card 3s ease 2s forwards 1;
+}
+
+@keyframes triangulo-animation {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0px, -10px);
+  }
+  50% {
+    transform: translate(0px, -20px);
+  }
+  75% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes name-animation {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0px, -15px);
+  }
+  50% {
+    transform: translate(0px, -35px);
+  }
+  75% {
+    transform: translate(0px, -15px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#Triangulo, #Triangulo_3 {
+  transition: 0.5s ease;
+  animation: triangulo-animation 3s linear infinite;
+}
+
+#Nome, #Nome_3 {
+  transition: 0.5s ease;
+  animation: name-animation 3s linear infinite;
+}
+
+#Triangulo_2, #Triangulo_4 {
+  transition: 0.5s ease;
+  animation: triangulo-animation 3s linear 1s infinite;
+}
+
+#Nome_2, #Nome_4 {
+  transition: 0.5s ease;
+  animation: name-animation 3s linear 1s infinite;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1237,6 +1354,7 @@ svg, img {
   transition: 0.5s ease;
 }
 .card-image:hover img {
+  animation: none;
   transform: scale(1.2);
 }
 .card-image img {
@@ -1314,12 +1432,17 @@ svg, img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  transition: 0.8s ease;
 }
 .benefit-box span {
   font-family: "Roboto", sans-serif;
   color: #0D0D0D;
   font-size: 24px;
   margin: 16px;
+}
+.benefit-box:hover .icon-box {
+  transition: 0.8s ease;
+  box-shadow: 1px -2px 31px 4px rgba(128, 0, 32, 0.59);
 }
 
 .icon-box {
@@ -1331,6 +1454,7 @@ svg, img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.8s ease;
 }
 .icon-box svg {
   width: 70%;
@@ -1794,6 +1918,13 @@ svg, img {
   height: 336px;
   box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
 }
+.container-product .product-info h2 {
+  width: 90%;
+}
+.container-product .product-info .heart {
+  margin-left: 70px;
+  width: 60px;
+}
 @media screen and (max-width: 1140px) and (min-width: 960px) {
   .container-product .product-info {
     width: 364px;
@@ -2177,4 +2308,8 @@ svg, img {
   .delete-container .sub-container h2 {
     font-size: 24px;
   }
+}
+
+.container-notfound {
+  height: 70vh;
 }/*# sourceMappingURL=index.css.map */

@@ -58,6 +58,7 @@
   right: 100px;
   user-select: none;
   transition: .4s ease;
+  overflow: hidden;
   animation: box-animation 10s ease-out 2s alternate infinite;
 
 
@@ -78,6 +79,7 @@
   right: 500px;
   user-select: none;
   transition: .4s ease;
+  overflow: hidden;
   animation: box-animation-reverse 10s ease-in 1s alternate infinite;
 
   @include responsive(m){
@@ -96,6 +98,7 @@
   right: 520px;
   transition: .4s ease;
   user-select: none;
+  overflow: hidden;
   animation: box-animation 10s ease-in-out alternate infinite;
   @include responsive(m){
     top: 340px  ;
@@ -111,8 +114,10 @@
 #box-two-1{
   top: 10px;
   left: 400px;
+  overflow: hidden;
   animation: box-animation-reverse-2 8s ease-in-out alternate infinite;
   @include responsive(s){
+    animation: none;
     left: 200px;
   }
 }
@@ -120,8 +125,10 @@
 #box-two-2{
   top: 210px;
   left: 50px;
+  overflow: hidden;
   animation: box-animation-2 10s ease 2s alternate infinite;
   @include responsive(s){
+    animation: none;
     top: 95px;
   }
 }
@@ -136,6 +143,8 @@
 #box-seven-1{
   top: 10px;
   left: 270px;
+  user-select: none;
+  animation: box-animation 10s ease-in-out alternate infinite;
   @include responsive(s){
     left: 220px;
   }
@@ -144,11 +153,15 @@
 #box-seven-2{
   top: 200px;
   left: -20px;
+  animation: box-animation-reverse 10s ease-in 1s alternate infinite;
+  user-select: none;
 }
 
 #box-seven-3{
   top: 230px;
   left: 240px;
+  user-select: none;
+  animation: box-animation 10s ease-out 2s alternate infinite;
   @include responsive(s){
     left: 220px;
   }
@@ -241,4 +254,105 @@
   100% {
     transform: translate(-30px, 0) scale(1);
   }
+}
+
+.line-Animation{
+  animation: lineAnimation 5s ease-out infinite;
+}
+
+@keyframes lineAnimation {
+  0% {
+    transform: scaleX(0.8);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0.8);
+  }
+}
+
+
+@keyframes animation-image-card{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.img-card-ex-1{
+  img{
+    animation: animation-image-card 3s ease 1s forwards 1;
+  }
+}
+
+.img-card-ex-2{
+  img{
+    animation: animation-image-card 3s ease 1.5s forwards 1;
+  }
+}
+
+.img-card-ex-3{
+  img{
+    animation: animation-image-card 3s ease 2s forwards 1;
+  }
+}
+
+@keyframes triangulo-animation{
+ 0%{
+  transform: translate(0);
+ }
+ 25%{
+  transform: translate(0px,-10px);
+ }
+ 50%{
+  transform: translate(0px,-20px);
+ }
+ 75%{
+  transform: translate(0px,-10px);
+ }
+ 100%{
+  transform: translate(0);
+ }
+}
+
+@keyframes name-animation{
+  0%{
+    transform: translate(0);
+   }
+   25%{
+    transform: translate(0px,-15px);
+   }
+   50%{
+    transform: translate(0px,-35px);
+   }
+   75%{
+    transform: translate(0px,-15px);
+   }
+   100%{
+    transform: translate(0);
+   }
+}
+
+#Triangulo,  #Triangulo_3{
+  transition: .5s ease;
+  animation: triangulo-animation 3s linear infinite;
+}
+#Nome, #Nome_3{
+  transition: .5s ease;
+  animation: name-animation 3s linear infinite;
+
+}
+#Triangulo_2, #Triangulo_4{
+  transition: .5s ease;
+  animation: triangulo-animation 3s linear 1s infinite;
+}
+#Nome_2, #Nome_4{
+  transition: .5s ease;
+  animation: name-animation 3s linear 1s infinite;
 }

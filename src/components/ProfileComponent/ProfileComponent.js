@@ -1,14 +1,23 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import InputComponent from '../LandPageComponents/InputsComponents/InputComponent';
 import IconProfileSvg from '../LandPageComponents/SvgComponents/IconProfileSvg/IconProfileSvg';
 import PadlockSvg from '../LandPageComponents/SvgComponents/PadlockSvg/PadlockSvg';
 import UserService from '../../services/UserService/UserService';
 import { useGlobalContext } from '../../Context/GlobalContext/GlobalContext';
+import BookService from '../../services/BookService/BookService';
 
 function ProfileComponent() {
   const { dispatch } = useGlobalContext();
   const [option, setOption] = React.useState(0);
+  const [dadosUser, setDadosUser] = React.useState(null);
+  const [isAdmin, setIsAdmin] = React.useState(false);
+  const [totalBooks, setTotalBooks] = React.useState(0);
+
+  function logout() {
+    localStorage.removeItem('userData');
+    dispatch({ type: 'LOUGOUT' });
+  }
 
   React.useEffect(() => {
     const profile = document.querySelector('.container-profile');
@@ -36,6 +45,14 @@ function ProfileComponent() {
   React.useEffect(() => {
     const optionOne = document.querySelector('.option-item-1');
     const optionTwo = document.querySelector('.option-item-2');
+    const userService = new UserService();
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    const bookService = new BookService();
+
+    async function handleTotalBooks() {
+      const response = await bookService.totalBooks();
+      setTotalBooks(response);
+    }
 
     function changeOptionOne() {
       setOption(0);
@@ -47,18 +64,6 @@ function ProfileComponent() {
 
     optionOne.addEventListener('click', changeOptionOne);
     optionTwo.addEventListener('click', changeOptionTwo);
-
-    return () => {
-      optionOne.removeEventListener('click', changeOptionOne);
-      optionTwo.removeEventListener('click', changeOptionTwo);
-    };
-  }, []);
-
-  const [dadosUser, setDadosUser] = React.useState(null);
-  const [isAdmin, setIsAdmin] = React.useState(false);
-  React.useEffect(() => {
-    const userService = new UserService();
-    const userData = JSON.parse(localStorage.getItem('userData'));
     function handleDados() {
       if (userData) {
         setDadosUser(userData);
@@ -73,12 +78,13 @@ function ProfileComponent() {
 
     handleDados();
     handleRoles();
-  }, []);
+    handleTotalBooks();
 
-  function logout() {
-    localStorage.removeItem('userData');
-    dispatch({ type: 'LOUGOUT' });
-  }
+    return () => {
+      optionOne.removeEventListener('click', changeOptionOne);
+      optionTwo.removeEventListener('click', changeOptionTwo);
+    };
+  }, []);
 
   return (
     <section className="container flex-column ">
@@ -211,7 +217,7 @@ function ProfileComponent() {
           </div>
           <div className="flex-between mg-4 ">
             <h5>Total de livros cadastrados:</h5>
-            <h5>9999</h5>
+            <h5>{totalBooks}</h5>
           </div>
           <div className="flex-start flex-responsive">
             <Link to="/management">

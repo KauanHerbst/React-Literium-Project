@@ -48,6 +48,7 @@ $container-s: 540px;
   justify-content: center;
   align-items: center;
   @include responsive(s){
+    overflow: hidden;
     flex-direction: column;
     padding: 128px 18px;
   }
@@ -87,6 +88,10 @@ $container-s: 540px;
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-visible{
+  overflow: visible;
 }
 
 .flex{

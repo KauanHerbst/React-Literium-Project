@@ -67,10 +67,10 @@ function FooterComponent() {
                 <Link to="/">Sobre</Link>
               </h3>
               <h3 className="mg-3">
-                <Link to="/">Home</Link>
+                <Link to="/">Landing Page</Link>
               </h3>
               <h3 className="mg-3">
-                <Link to="/">Contato</Link>
+                <Link to="/home">Home</Link>
               </h3>
             </div>
             <div className="mt-4">
@@ -78,10 +78,10 @@ function FooterComponent() {
                 <Link to="/">Sobre</Link>
               </h3>
               <h3 className="mg-3">
-                <Link to="/">Home</Link>
+                <Link to="/">Landing Page</Link>
               </h3>
               <h3 className="mg-3">
-                <Link to="/">Contato</Link>
+                <Link to="/">Home</Link>
               </h3>
             </div>
           </div>
