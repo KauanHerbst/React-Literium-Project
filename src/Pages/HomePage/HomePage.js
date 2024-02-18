@@ -8,11 +8,11 @@ function HomePage() {
   return (
     <>
       <ImagePromotion />
-      <CategoryComponent category="Ação" idCategory="7" />
-      <CategoryComponent category="Aventura" idCategory="4" />
-      <CategoryComponent category="Romance" idCategory="5" />
+      <CategoryComponent category="Ação" idCategory="1" />
+      <CategoryComponent category="Aventura" idCategory="2" />
+      <CategoryComponent category="Romance" idCategory="3" />
       <AuthorComponent />
-      <CategoryComponent category="Drama" idCategory="6" />
+      <CategoryComponent category="Drama" idCategory="4" />
       <RecNewsComponent />
     </>
   );

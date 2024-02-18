@@ -6,7 +6,7 @@ function FavPage() {
   return (
     <>
       <FavComponent />
-      <CategoryComponent category="Veja Também" idCategory="4" />
+      <CategoryComponent category="Veja Também" idCategory="1" />
     </>
   );
 }

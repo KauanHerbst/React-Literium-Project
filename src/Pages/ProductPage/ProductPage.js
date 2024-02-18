@@ -6,7 +6,7 @@ function ProductPage() {
   return (
     <>
       <ProductComponent />
-      <CategoryComponent category="Veja Também" idCategory="5" />
+      <CategoryComponent category="Veja Também" idCategory="2" />
     </>
   );
 }
