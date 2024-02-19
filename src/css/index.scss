@@ -26,10 +26,10 @@ a{
   color: $white-light-3;
   text-decoration: none;
 
-  transition: .2s linear;
+  transition: .3s ease;
 
   &:hover{
-    color: $primary-dark-3
+    transform: scale(1.2);
   }
 }
 
@@ -739,6 +739,8 @@ svg, img{
   padding: 8px 16px;
   background-color: $white-light-3;
   box-shadow: 0px -0.359px 19.969px 0px rgba(0, 0, 0, 0.04), 0px 32.014px 61.049px 0px rgba(0, 0, 0, 0.08);
+  justify-content: center;
+  align-items: center;
 
   .image-product-cart{
     border-radius: 12px;
@@ -756,6 +758,8 @@ svg, img{
   }
 
   @include responsive(xs){
+    flex-direction: column;
+    height: 336px;
     max-width: 95%;
     .image-product-cart{
       margin-top: 16px;

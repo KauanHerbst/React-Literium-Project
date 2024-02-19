@@ -46,6 +46,7 @@ header{
   padding: 8px 18px;
   align-items: center;
   .link-cta-mobile{
+    text-align: center;
     width: 156px;
     margin-left: 36px;
   }
@@ -122,9 +123,12 @@ header{
     transition: .5s ease;
     &:hover{
       background-color: $primary-dark-2;
-      color: $white-light-3;
+      a{
+        color: $white-light-3;
+      }
     }
   }
+
 }
 
 
@@ -218,7 +222,9 @@ header{
     transition: .5s ease;
     &:hover{
       background-color: $primary-dark-2;
-      color: $white-light-3;
+      a{
+        color: $white-light-3;
+      }
     }
   }
 }

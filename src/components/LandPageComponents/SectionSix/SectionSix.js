@@ -26,14 +26,22 @@ function SectionSix() {
       </div>
       <div className="flex-item-4 position-relative ">
         <div className="container-image-section-six" data-aos="fade-left">
-          <img src={SuporteImage1} className="image-secton-six" />
+          <img
+            src={SuporteImage1}
+            className="image-secton-six"
+            alt="Imagem da equipe de suporte"
+          />
         </div>
         <div
           className="container-image-section-six position-relative"
           id="image-section-six-1"
           data-aos="fade-right"
         >
-          <img src={SuporteImage2} className="image-secton-six " />
+          <img
+            src={SuporteImage2}
+            className="image-secton-six "
+            alt="Imagem da equipe de suporte"
+          />
         </div>
       </div>
     </section>

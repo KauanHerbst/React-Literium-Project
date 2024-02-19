@@ -87,7 +87,7 @@ function CardBuyComponent({ name, price, img, id }) {
   return (
     <div className="flex-start flex-column flex-no-center container-cardBuy">
       <div className="container-image flex-start position-relative">
-        <img src={img} className="image-book" />
+        <img src={img} className="image-book" alt="Imagem do Livro" />
         <HeartNoFillSvg
           className="position-absolute heartSvg mg-1"
           isRef={heartRef}

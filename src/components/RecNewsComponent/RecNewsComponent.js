@@ -32,11 +32,23 @@ function RecNewsComponent() {
       <div className="container-recnews">
         <div className="mg-2 flex-start flex-column flex-no-center">
           <label htmlFor="name">Nome</label>
-          <input required type="text" name="name" onChange={handleChange} />
+          <input
+            required
+            type="text"
+            name="name"
+            id="name"
+            onChange={handleChange}
+          />
         </div>
         <div className="mg-2 flex-start flex-column flex-no-center">
           <label htmlFor="email">Email</label>
-          <input required type="email" name="email" onChange={handleChange} />
+          <input
+            required
+            type="email"
+            name="email"
+            id="email"
+            onChange={handleChange}
+          />
         </div>
         <button
           type="submit"

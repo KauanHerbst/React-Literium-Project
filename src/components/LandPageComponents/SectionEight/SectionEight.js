@@ -16,22 +16,27 @@ function SectionEight() {
       <div className="mt-4" data-aos="fade-up">
         <div className="flex-start flex-column flex-no-center mt-1">
           <label htmlFor="name">Nome</label>
-          <input required type="text" name="name" />
+          <input required type="text" name="name" id="name" />
         </div>
 
         <div className="flex-start flex-column flex-no-center mt-1">
           <label htmlFor="email">Email</label>
-          <input required type="email" name="email" />
+          <input required type="email" id="email" name="email" />
         </div>
 
         <div className="flex-start flex-column flex-no-center mt-1">
           <label htmlFor="senha">Senha</label>
-          <input required type="password" name="senha" />
+          <input required type="password" name="senha" id="senha" />
         </div>
 
         <div className="flex-start flex-column flex-no-center mt-1">
           <label htmlFor="senha-repeat">Repetir Senha</label>
-          <input required type="password" name="senha-repeat" />
+          <input
+            required
+            type="password"
+            name="senha-repeat"
+            id="senha-repeat"
+          />
         </div>
         <div className="mg-4">
           <ButtonAccountComponent />

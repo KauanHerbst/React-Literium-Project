@@ -20,7 +20,11 @@ function HeroComponent() {
         </div>
       </div>
       <div className="flex-item-3 position-relative" data-aos="zoom-in-up">
-        <img src={BookWebp} className="image-hero overflow-hidden" />
+        <img
+          src={BookWebp}
+          className="image-hero overflow-hidden"
+          alt="Livro Literium"
+        />
         <div id="box-hero-1" className="box-float-big position-absolute">
           Amo Livros
         </div>

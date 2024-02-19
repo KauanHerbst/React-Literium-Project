@@ -23,7 +23,9 @@ function ImagePromotion() {
     };
   }, []);
 
-  return <img src={image} className="image-promotion" />;
+  return (
+    <img src={image} className="image-promotion" alt="Imagem Promocional" />
+  );
 }
 
 export default ImagePromotion;

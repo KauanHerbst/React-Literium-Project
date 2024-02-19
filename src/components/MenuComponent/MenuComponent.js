@@ -139,6 +139,7 @@ function MenuComponent() {
                   className="inputSearchDesktop"
                   type="search"
                   name="search"
+                  id="search"
                   value={valueSearch}
                   onChange={(e) => setValueSearch(e.target.value)}
                 />
@@ -177,29 +178,30 @@ function MenuComponent() {
                   </div>
                   <div className="flex-start icons-menu-mobile">
                     <Link to="/favorites">
-                      <IconFavSvg className="ml-1 element-icon-menu" />
+                      <IconFavSvg className="mr-2 element-icon-menu" />
                     </Link>
                     <Link to="/cart">
-                      <IconCartSvg className="ml-1 element-icon-menu" />
+                      <IconCartSvg className="mr-2 element-icon-menu" />
                     </Link>
                     <Link to="/profile">
-                      <IconProfileSvg className="ml-1 element-icon-menu" />
+                      <IconProfileSvg className="mr-2 element-icon-menu" />
                     </Link>
                   </div>
                 </div>
                 <div className="mg-2 flex-start">
                   <div className="searchBarMenu flex-start">
-                    <label htmlFor="search">
+                    <label htmlFor="search_Mobile" id="search_Mobile">
                       <GlassSvg
                         height="30"
-                        width=""
+                        width="30"
                         className="searchIconMobile"
                       />
                     </label>
                     <input
                       className="inputSearchMobile"
                       type="search"
-                      name="search"
+                      name="search_Mobile"
+                      id="search_Mobile"
                       value={valueSearch}
                       onChange={(e) => setValueSearch(e.target.value)}
                     />

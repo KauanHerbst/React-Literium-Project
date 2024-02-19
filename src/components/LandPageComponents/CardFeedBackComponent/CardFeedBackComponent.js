@@ -5,7 +5,11 @@ function CardFeedBackComponent({ children, name, img }) {
   return (
     <div className="container-card-feedback mg-3">
       <div className="flex-start">
-        <img src={img} className="card-feedback-image mr-1" />
+        <img
+          src={img}
+          alt="Imagem de perfil de uma pessoa"
+          className="card-feedback-image mr-1"
+        />
         <span>{name}</span>
       </div>
       <div className="mg-4">

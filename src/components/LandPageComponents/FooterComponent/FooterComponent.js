@@ -38,16 +38,16 @@ function FooterComponent() {
         </div>
         <div className="flex-start">
           <div className="flex-start container-footer-mobile-social ">
-            <Link to="/" className="mr-1">
+            <Link to="/" className="mr-1" aria-label="Link Instagram">
               <InstagramSvg className="mr-1" />
             </Link>
-            <Link to="/" className="mr-1">
+            <Link to="/" className="mr-1" aria-label="Link Twitter/X">
               <TwitterSvg className="mr-1" />
             </Link>
-            <Link to="/" className="mr-1">
+            <Link to="/" className="mr-1" aria-label="Link GitHub">
               <GithubSvg className="mr-1" />
             </Link>
-            <Link to="/" className="mr-1">
+            <Link to="/" className="mr-1" aria-label="Link Linkedin">
               <LinkedinSvg className="mr-1" />
             </Link>
           </div>

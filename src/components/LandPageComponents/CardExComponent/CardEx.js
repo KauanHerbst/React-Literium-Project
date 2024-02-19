@@ -9,7 +9,7 @@ function CardEx({ children, img, id, className }) {
       id={id}
     >
       <div className={className}>
-        <img src={img} />
+        <img src={img} alt="Livro Exemplo De Capa Lisa" />
       </div>
       <CardButton>Adicionar ao Carrinho</CardButton>
     </div>

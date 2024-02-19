@@ -23,9 +23,9 @@ function CategoriesMenu({ children, className }) {
       {categories ? (
         categories.content && categories.content.length > 0 ? (
           categories.content.map((categoria) => (
-            <Link key={categoria.id} to={`/categories/${categoria.id}`}>
-              <li className="mg-1">{categoria.name}</li>
-            </Link>
+            <li className="mg-1" key={categoria.id}>
+              <Link to={`/categories/${categoria.id}`}>{categoria.name}</Link>
+            </li>
           ))
         ) : (
           <li>Nenhuma categoria disponível</li>

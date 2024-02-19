@@ -108,7 +108,7 @@ function OrderComponent({ bookId, userId, amount }) {
                   <h5 className="ml-1 mb-1">R$: {bookData.price}</h5>
                 </div>
               </div>
-              <div className="flex-item-1 flex-start flex-column ml-4">
+              <div className="flex-item-1 flex-start flex-column">
                 <div className="flex-start container-add-product">
                   <div className="mg-1 btn-sub" ref={btnSubRef}>
                     -

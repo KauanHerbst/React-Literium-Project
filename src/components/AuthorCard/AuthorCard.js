@@ -5,7 +5,7 @@ function AuthorCard({ children, name, img }) {
   return (
     <div className="container-author flex-start flex-column text-center mg-2">
       <div className="container-author-img">
-        <img src={img} />
+        <img src={img} alt="Imagem do Autor" />
       </div>
       <div className="mt-2">
         <h5>{name}</h5>

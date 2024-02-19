@@ -20,7 +20,7 @@ function MenuComponent() {
         </div>
         <div className="menu-small">
           <Link to="/">Sobre</Link>
-          <LiteirumSvg className="ml-2" />
+          <LiteirumSvg className="ml-4 " />
           <Link to="/home" className="link-cta-mobile">
             Ver Acervo
           </Link>

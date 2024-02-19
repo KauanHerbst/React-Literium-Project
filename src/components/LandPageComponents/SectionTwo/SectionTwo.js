@@ -39,7 +39,11 @@ function SectionTwo() {
       </div>
       <div className="flex-item-3" data-aos="fade-left">
         <div className="container-image-section-two position-relative">
-          <img src={ImageContent} className="image-section-two" />
+          <img
+            src={ImageContent}
+            className="image-section-two"
+            alt="Imagem de uma pessoa lendo um livro"
+          />
           <div id="box-two-1" className="box-float-small position-absolute">
             <HeartEyesSvg />
           </div>
