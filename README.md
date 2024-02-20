@@ -19,14 +19,15 @@
 ![vercel][VERCEL_BADGE]
 
 <p align="center">
- <a href="#about">Sobre</a> • 
- <a href="#started">Começando</a> • 
-  <a href="#started">Rotas</a> 
+ <a href="#about">Sobre</a> •
+ <a href="#started">Começando</a> •
+  <a href="#started">Rotas</a>
+  <a href="#api">Literium API</a>
 </p>
 
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/KauanHerbst/React-Literium-Project/main/src/images/LogoLiteirum.png" alt="Image Example" width="400px">
+    <img src="https://raw.githubusercontent.com/KauanHerbst/React-Literium-Project/main/src/images/LogoLiteirum.png" alt="Logo Literium" width="230px">
 </p>
 
 <h2 id="started">📌 Sobre</h2>
@@ -77,7 +78,7 @@ npm start
 
 Todas as rotas acessíveis da aplicação
 ​
-| Rota               | Descrição                                          
+| Rota               | Descrição
 |----------------------|-----------------------------------------------------
 | <kbd>/</kbd>     | Landing Page
 | <kbd>/home</kbd>     | Página principal
