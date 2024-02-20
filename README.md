@@ -7,6 +7,7 @@
 [FIGMA_BADGE]: https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
 [PROJECT__URL]: https://literium.vercel.app/
+[PROJECT_FIGMA_URL]: https://www.figma.com/file/WVoaeLKRBEmjYSuxsPTXqD/Wireframes-Literium?type=design&node-id=2022%3A472&mode=design&t=m1DfE6NLLm82WCzq-1
 
 <h1 align="center" style="font-weight: bold;">Literium 💻</h1>
 
@@ -21,7 +22,7 @@
 <p align="center">
  <a href="#about">Sobre</a> •
  <a href="#started">Começando</a> •
-  <a href="#started">Rotas</a>
+  <a href="#routes">Rotas</a> •
   <a href="#api">Literium API</a>
 </p>
 
@@ -34,7 +35,7 @@
 
 O Literium é um e-commerce voltado para a venda de livros online. Inicialmente, foi prototipado no Figma e, posteriormente, desenvolvido empregando diversas tecnologias modernas, tais como React, Javascript e Sass. Com o intuito de proporcionar uma experiência de usuário fluida, o Literium foi concebido como uma SPA (Single Page Application). O gerenciamento da navegação na aplicação é realizado por meio do React Router Dom 6, enquanto a Context API é empregada para o gerenciamento fundamental da sessão do usuário. Adicionalmente, um Web Service API foi desenvolvido especificamente para o projeto, utilizando a tecnologia Spring Boot em Java. Esta abordagem confere ao Literium a capacidade de interagir de maneira eficaz com o backend, ampliando suas funcionalidades e otimizando a comunicação entre o front-end e o servidor.
 
-[![project][PROJECT__BADGE]][PROJECT__URL]
+[![project][PROJECT__BADGE]][PROJECT__URL] [![projeto_in_figma][FIGMA_BADGE]][PROJECT_FIGMA_URL]
 
 <h2 id="started">🚀 Começando</h2>
 
